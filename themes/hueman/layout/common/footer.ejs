@@ -75,3 +75,31 @@
         </div>
     </div>
 </footer>
+
+
+<form class="popup-form mfp-hide white-popup-block">
+    <h3>Contact Us</h3>
+    <div class="popup-form__input-wrapper">
+        <label for="name">Name</label><br>
+        <input id="name" name="name" type="text">
+        <p class="popup-form__input-wrapper_invalid-message" id="name_error">This field can not be empty</p>
+    </div>
+    <div class="popup-form__input-wrapper">
+        <label for="email">Email</label><br>
+        <input id="email" name="email" type="email">
+        <p class="popup-form__input-wrapper_invalid-message" id="email_error">This field must contain valid email</p>
+    </div>
+    <div class="popup-form__input-wrapper">
+        <label for="Textarea">Message</label><br>
+        <textarea id="message"></textarea>
+        <p class="popup-form__input-wrapper_invalid-message" id="textarea_error">This field can not be empty</p>
+    </div>
+    <div class="popup-form__btn-wrapper">
+        <button class="btn" id="form__submit">Contact Us</button>
+    </div>
+    <div class="success-message">
+        <div class="success-message__icon">
+            <i class="fa fa-check" aria-hidden="true"></i>
+        </div>
+        <span>Success!</span></div>
+</form>
