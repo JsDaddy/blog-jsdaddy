@@ -62,7 +62,7 @@ This property define size row and colums grid. Values of this properties are typ
 }
 ```
 
-![We created 2 rows and 2 columns](/css/images/column-row-grid.png)
+![We created 2 rows and 2 columns](/blog/css/images/column-row-grid.png)
 
 ## Unit of measurement fr
 
@@ -81,7 +81,7 @@ In specification was created new unit of measurement - fr;
 }
 ```
 
-![We created 2 rows and 2 columns width new unit of measurement](/css/images/column-row-grid.png)
+![We created 2 rows and 2 columns width new unit of measurement](/blog/css/images/column-row-grid.png)
 
 ## Creates track listings with repeat() notation
     
@@ -99,7 +99,7 @@ Large templates can contain large number of columns and row. You can use functio
 }
 ```
 
-![We created 2 rows and 2 columns use repeat() function](/css/images/column-row-grid.png)
+![We created 2 rows and 2 columns use repeat() function](/blog/css/images/column-row-grid.png)
 
 You can apply function ( repeat() ) for  grid-template-rows property. Working principles is not going to change.
 
@@ -116,7 +116,7 @@ For example you need to create container with min height 200px but max height ha
  }
 ```
 
-![Manage is quite convenient](/css/images/column-row-grid1.png)
+![Manage is quite convenient](/blog/css/images/column-row-grid1.png)
 
 
 ## Gutters 
@@ -130,4 +130,4 @@ This is one of the comfortable ways to specify gap between blocks of grid contai
    row-gap: 5px;
  }
 ```
-![Work result](/css/images/column-row-grid2.png)
+![Work result](/blog/css/images/column-row-grid2.png)
