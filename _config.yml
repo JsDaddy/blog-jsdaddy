@@ -7,13 +7,13 @@ title: Blog JsDaddy
 subtitle:
 description: We share our knowledge
 keywords: css, js, html, angular, react, flutter,
-author: John Doe
+author: JSDADDY
 language: en
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://jsdaddy.io/
 root: /blog/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
