@@ -5,9 +5,9 @@ In this article we will look how to make it in few ways, which way to choose is 
 
 ![splash screen example](/blog/css/images/splash-screen-example.jpg)
 
-## Connect the flutter package
+## Connect the flutter package.
 
-There are a lot of packages on https://pub.dartlang.org to help you in the most of cases and this case isn't exception.
+ There are a lot of packages on https://pub.dartlang.org to help you in the most of cases and this case isn't exception.
 Just be sure to choose the package which have scored more than 90 points. 
 This will ensure you that you choose the most up-to-date and less prone to errors package.
 For this case https://pub.dartlang.org/packages/splashscreen#-analysis-tab- will do just fine.
