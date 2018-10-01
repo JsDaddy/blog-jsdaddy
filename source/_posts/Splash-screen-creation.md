@@ -3,6 +3,8 @@ title: How to make splash screen for Android and iOS on flutter
 ---
 In this article we will look how to make it in few ways, which way to choose is up to you.
 
+![splash screen example](/blog/css/images/splash-screen-example.jpg)
+
 ## Connect the flutter package
 
 There are a lot of packages on https://pub.dartlang.org to help you in the most of cases and this case isn't exception.
@@ -37,14 +39,21 @@ It has sufficient amount of settings to provide you control of your splash scree
 
 In the end you will see something like this:
 
-![splash screen example](https://github.com/KarimMohamed2005/SplashScreenFlutterPackage/raw/master/screenshot.png)
+![splash screen example](/blog/css/images/packageExample.png)
+
 
 ## Change files in the appropriate folder
 
 ### For Android
 
 Navigate to:  android => app => src => main => res
+
+![Path to Android](/blog/css/images/androidPath.png)
+
 Here we seen folders with xml files and png images with different size.
+
+![Android files](/blog/css/images/androidFiles.png)
+
 Splash screen is active by the default but it has no image and background color is white so it makes no difference whether it is enabled or disabled. To change background color you have to create new file with xml extension in the values folder and define color and his alias. 
 
 ___
@@ -79,6 +88,9 @@ ___
 ### For iOS
 
 Navigate to: ios => Runner => Assets.xcassets => LaunchImage.imageset
+
+![Path to iOS](/blog/css/images/iosPath.png)
+
 There you can see three images with different scale size, replace them with your images and that's all.
 
 ![Change this files](/blog/css/images/iosImages.png)
