@@ -1,5 +1,8 @@
----
 title: CSS Grid Layout short instruction
+tags:
+  - css
+categories: []
+date: 2018-09-26 15:17:00
 ---
 One of the most significant events last year was that main browser received official support CSS Grid Layout.
 Every day CSS Grid Layout becomes more and more popular among developers. We have prepared basic instruction about this instrument.

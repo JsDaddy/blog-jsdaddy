@@ -79,3 +79,9 @@ theme: hueman
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type:
+
+# hexo-admin authentification
+admin:
+  username: jsdaddy
+  password_hash: $2a$10$mv7Db2Xgm3LkSQPbQJEBk.a6F9UTGaphKOKSK0Hlw4fRr3xNskSmS
+  secret: my super secret phrase
