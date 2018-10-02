@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: JsDaddy blog - we share our knowledge
 subtitle:
 description:
-keywords:
-author: John Doe
+keywords: js, angular, react, css, gtml
+author:
 language:
 timezone:
 
