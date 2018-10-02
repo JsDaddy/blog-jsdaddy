@@ -39,7 +39,6 @@ code
 .container-inner
     clearfix()
     max-width: container-inner-max-width
-    min-width: container-inner-min-width
     width: 100%
     margin: 0 auto
 
@@ -100,6 +99,10 @@ code
     .main-body-content
         clearfix()
 
+.article-header
+    box-shadow: none
+    z-index: 4
+
 @import "_partial/header"
 @import "_partial/nav"
 @import "_partial/sidebar"
@@ -111,7 +114,6 @@ code
 @import "_partial/insight"
 @import "_highlight/index"
 @import "_responsive"
-
 
 @media only screen and (max-width: 1200px)
     header
@@ -129,3 +131,6 @@ code
     .main-body-inner
         padding-left: 0px
         background-position: -290px 0 !important;
+    .article-inner
+        header
+            z-index: 4
