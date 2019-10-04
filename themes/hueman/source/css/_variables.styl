@@ -1,6 +1,8 @@
+// Config
 support-for-ie = false
 vendor-prefixes = webkit moz ms official
 
+// Colors
 color-default = #555
 if hexo-config("customize.theme_color")
     color-theme = convert(hexo-config("customize.theme_color"))
@@ -21,6 +23,7 @@ color-sidebar-text = #777
 color-sidebar-text-dark = #444
 color-footer-background = #33363b
 
+// Fonts
 font-sans = "Titillium Web", "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", sans-serif
 font-serif = Georgia, "Times New Roman", serif
 font-mono = "Source Code Pro", Consolas, Monaco, Menlo, Consolas, monospace
@@ -30,14 +33,17 @@ font-size-article = 18px
 line-height = 1.6em
 line-height-title = 1.3em
 
+// Header
 logo-url = hexo-config("customize.logo.url")
 logo-width = 0px + hexo-config("customize.logo.width")
 logo-height = 0px + hexo-config("customize.logo.height")
 
+// Sidebar
 sidebar = hexo-config("customize.sidebar")
 sidebar-width = 340px
 sidebar-toggle-width = 50px
 
+// Layout
 container-padding = 20px
 container-inner-min-width = 320px
 container-inner-max-width = 1120px
@@ -48,8 +54,10 @@ mobile-nav-width = 280px
 thumbnail-default = "images/thumb-default.png"
 thumbnail-default-small = "images/thumb-default-small.png"
 
+// Code Highlight
 highlight = hexo-config("customize.highlight") || "tomorrow"
 
+// Miscellaneous
 color-twitter = #00aced
 color-facebook = #3b5998
 color-pinterest = #cb2027
