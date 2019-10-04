@@ -1,0 +1,28 @@
+name: Deploy Blog
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+ deploy:
+   runs-on: ubuntu-latest
+   steps:
+   - name: Deploy
+     uses: appleboy/ssh-action@master
+     env:
+       USERNAME: ${{ secrets.my_username }}
+       HOST: ${{ secrets.my_host }}
+       PASSWORD: ${{ secrets.PASSWORD }}
+       SCRIPT: |
+          whoami
+          cd blog-jsdaddy
+          git pull origin master
+          docker build -t jsdaddy/blog .
+          docker stop blog-container
+          docker rm blog-container
+          docker run -p 4000:4000 --name blog-container -d jsdaddy/blog
+       script_stop: true
+       TIMEOUT: "5m"
+       COMMAND_TIMEOUT: "5m"
