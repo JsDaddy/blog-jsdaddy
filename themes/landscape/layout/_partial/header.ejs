@@ -1,44 +1,31 @@
-<header>
-  <div id="header" class="default">
-    <div class="container" id="header">
-      <div class="row align-items-center justify-content-between">
-        <div class="col-2 logo">
-          <a href="/">
-            <img src="/css/images/logo.png" alt="JsDaddy">
-          </a>
-        </div>
-        <div class="nav-wrapper col-lg-10">
-          <nav>
-            <ul id="menu-wrap">
-              <li>
-                <a href="#services" class="link-nav">Services</a>
-              </li>
-              <li>
-                <a href="#dev-process" class="link-nav">Development Process</a>
-              </li>
-              <li>
-                <a href="#technologies" class="link-nav">Technologies</a>
-              </li>
-              <li>
-                <a href="#header" class="link-nav">Portfolio</a>
-              </li>
-              <li>
-                <a href="#testimonials" class="link-nav">Testimonials</a>
-              </li>
-              <li>
-                <a href="#footer" class="link-nav">About Us</a>
-              </li>
-            </ul>
-          </nav>
-          <div class="btn-wrap">
-            <a class="btn contact_us_btn" href=".popup-form">Contact Us</a>
-          </div>
-        </div>
-        <div class="nav-burger">
-          <div class="line"></div>
-          <div class="line-middle"></div>
-          <div class="line"></div>
-        </div>
+<header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="<%- url_for() %>" id="logo"><%= config.title %></a>
+      </h1>
+      <% if (theme.subtitle){ %>
+        <h2 id="subtitle-wrap">
+          <a href="<%- url_for() %>" id="subtitle"><%= theme.subtitle %></a>
+        </h2>
+      <% } %>
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        <% for (var i in theme.menu){ %>
+          <a class="main-nav-link" href="<%- url_for(theme.menu[i]) %>"><%= i %></a>
+        <% } %>
+      </nav>
+      <nav id="sub-nav">
+        <% if (theme.rss){ %>
+          <a id="nav-rss-link" class="nav-icon" href="<%- url_for(theme.rss) %>" title="<%= __('rss_feed') %>"></a>
+        <% } %>
+        <a id="nav-search-btn" class="nav-icon" title="<%= __('search') %>"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <%- search_form({button: '&#xF002;'}) %>
       </div>
     </div>
   </div>

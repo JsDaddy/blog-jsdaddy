@@ -5,11 +5,13 @@
         <div class="container">
             <div class="main-body container-inner">
                 <div class="main-body-inner">
-                    <div id="main">
+                    <section id="main">
+                        <%- partial('common/content-title') %>
                         <div class="main-body-content">
                             <%- body %>
                         </div>
-                    </div>
+                    </section>
+                    <%- partial('common/sidebar') %>
                 </div>
             </div>
         </div>

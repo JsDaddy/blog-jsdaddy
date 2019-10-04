@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: JsDaddy blog - we share our knowledge
+title: JSDaddy blog - we share our knowledge
 subtitle:
 description:
-keywords: js, angular, react, css, gtml
-author:
+keywords: JSDaddy, JS, JavaScript, Angular, React, Vue, Dart, Flutter, CSS, HTML, SASS, LESS, SCSS, Redux, NgRx, RxJs, Mongodb, MySQL, Node, Node.JS, Nest, Nest.JS, Tests, Jasmine, Jest, Webpack, npm, Gulp, Docker, git
+author: JSDaddy
 language:
 timezone:
 
@@ -43,7 +43,7 @@ highlight:
   line_number: true
   auto_detect: false
   tab_replace:
-  
+
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
 # per_page: Posts displayed per page. (0 = disable pagination)
@@ -52,7 +52,7 @@ index_generator:
   path: ''
   per_page: 10
   order_by: -date
-  
+
 # Category & Tag
 default_category: uncategorized
 category_map:
@@ -79,9 +79,3 @@ theme: hueman
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type:
-
-# hexo-admin authentification
-admin:
-  username: jsdaddy
-  password_hash: $2a$10$mv7Db2Xgm3LkSQPbQJEBk.a6F9UTGaphKOKSK0Hlw4fRr3xNskSmS
-  secret: my super secret phrase

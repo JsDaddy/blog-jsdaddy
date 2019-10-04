@@ -1,6 +1,0 @@
-options:
-  askImageFilename: true
-  imagePrefix: pasted-
-  lineNumbers: true
-editor:
-  lineNumbers: true
