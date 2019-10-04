@@ -12,4 +12,6 @@ COPY . /usr/src/app
 
 RUN hexo clean
 
+RUN hexo deploy
+
 CMD ["hexo", "server"]
