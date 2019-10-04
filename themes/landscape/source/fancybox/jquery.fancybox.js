@@ -594,7 +594,7 @@
 
 				// Help browser to restore document dimensions
 				if (isTouch) {
-					F.wrap.removeAttr('style').addClass('fancybox-tmp');
+					F.wrap.removeAttr('style.styl.css').addClass('fancybox-tmp');
 
 					F.trigger('onUpdate');
 				}

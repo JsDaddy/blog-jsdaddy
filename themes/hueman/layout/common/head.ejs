@@ -49,12 +49,13 @@
         <link rel="icon" href="<%- url_for(theme.customize.favicon) %>" />
     <% } %>
 
+    <link href="../../../hueman/source/css/main.min.css" type="text/css"/>
+
     <%- css('libs/font-awesome/css/font-awesome.min') %>
     <%- css('libs/titillium-web/styles') %>
     <%- css('libs/source-code-pro/styles') %>
 
     <%- css('css/style') %>
-    <%- css('css/main.min') %>\
 
     <%- js('libs/jquery/3.3.1/jquery.min') %>
     <%- partial('plugin/scripts', { isHead: true }) %>
