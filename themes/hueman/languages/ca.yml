@@ -12,14 +12,14 @@ nav:
     total_page:
         other: 'de %d'
 sidebar:
-    follow: 'seguir'
-    newer: 'més nou'
-    older: 'antic'
+    follow: 'follow'
+    newer: 'newer'
+    older: 'older'
     recents: 'recents'
-    archives: 'arxius'
+    archives: 'archives'
     categories: 'categories'
     links: 'links'
-    tags: 'etiquetes'
+    tags: 'tags'
     tag_cloud: 'etiqueta cloud'
 article:
     comments: 'Comentaris'
@@ -29,5 +29,5 @@ insight:
     posts: 'Posts'
     pages: 'Pages'
     categories: 'categories'
-    tags: 'etiquetes'
+    tags: 'tags'
     untitled: '(Untitled)'

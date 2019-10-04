@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+
+    
+
+    
+    <title>How to make splash screen for Android and iOS on flutter | JSDaddy blog - we share our knowledge</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="keywords" content="FLUTTER">
+    
+    <meta name="description" content="In this article we will look how to make it in few ways, which way to choose is up to you.  Connect the flutter package. There are a lot of packages on https://pub.dartlang.org to help you in the most">
+<meta name="keywords" content="FLUTTER">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to make splash screen for Android and iOS on flutter">
+<meta property="og:url" content="http://yoursite.com/2019/10/04/Splash-screen-creation/index.html">
+<meta property="og:site_name" content="JSDaddy blog - we share our knowledge">
+<meta property="og:description" content="In this article we will look how to make it in few ways, which way to choose is up to you.  Connect the flutter package. There are a lot of packages on https://pub.dartlang.org to help you in the most">
+<meta property="og:locale" content="default">
+<meta property="og:image" content="http://yoursite.com/blog/css/images/splash-screen-example.jpg">
+<meta property="og:updated_time" content="2019-10-04T15:57:24.275Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="How to make splash screen for Android and iOS on flutter">
+<meta name="twitter:description" content="In this article we will look how to make it in few ways, which way to choose is up to you.  Connect the flutter package. There are a lot of packages on https://pub.dartlang.org to help you in the most">
+<meta name="twitter:image" content="http://yoursite.com/blog/css/images/splash-screen-example.jpg">
+    
+    <base href="/">
+    
+        <link rel="alternate" href="/" title="JSDaddy blog - we share our knowledge" type="application/atom+xml">
+    
+
+    
+
+    <link rel="stylesheet" href="/blog/libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/blog/libs/titillium-web/styles.css">
+    <link rel="stylesheet" href="/blog/libs/source-code-pro/styles.css">
+
+    <link rel="stylesheet" href="/blog/css/style.css">
+    <link rel="stylesheet" href="/blog/css/main.min.css">
+
+    <script src="/blog/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    
+        <link rel="stylesheet" href="/blog/libs/lightgallery/css/lightgallery.min.css">
+    
+    
+        <link rel="stylesheet" href="/blog/libs/justified-gallery/justifiedGallery.min.css">
+    
+    
+    
+
+
+</head>
+</html>
+<body>
+    <div id="wrap">
+        <header>
+    <div id="header">
+        <div class="container" id="header">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-2 logo">
+                    <a href="/">
+                        <img src="/blog/css/images/logo.png" alt="JsDaddy">
+                    </a>
+                </div>
+                <div class="nav-wrapper col-lg-10">
+                    <nav>
+                        <ul id="menu-wrap">
+                            <li>
+                                <a href="http://jsdaddy.io/#services" class="link-nav">Services</a>
+                            </li>
+                            <li>
+                                <a href="http://jsdaddy.io/#dev-process" class="link-nav">Development Process</a>
+                            </li>
+                            <li>
+                                <a href="http://jsdaddy.io/#technologies" class="link-nav">Technologies</a>
+                            </li>
+                            <li>
+                                <a href="http://jsdaddy.io/#header" class="link-nav">Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="http://jsdaddy.io/#testimonials" class="link-nav">Testimonials</a>
+                            </li>
+                            <li>
+                                <a href="http://jsdaddy.io/about-us" class="link-nav">About Us</a>
+                            </li>
+                            <li>
+                                <a href="http://jsdaddy.io/blog" class="link-nav">Blog</a>
+                            </li>
+                        </ul>
+                    </nav>
+<!--                    <div class="btn-wrap">-->
+<!--                        <a class="btn contact_us_btn" href="#popup-form">Contact Us</a>-->
+<!--                    </div>-->
+                </div>
+                <div class="nav-burger">
+                    <div class="line"></div>
+                    <div class="line-middle"></div>
+
+                    <div class="line"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="blog-banner">
+    <div class="container">
+        <div class="row">
+            <h1>We share our knowledge</h1>
+        </div>
+    </div>
+</section>
+
+        <div class="container">
+            <div class="main-body container-inner">
+                <div class="main-body-inner">
+                    <section id="main">
+                        
+                        <div class="main-body-content">
+                            <article id="post-Splash-screen-creation" class="article article-single article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+            <header class="article-header">
+                
+    
+        <h1 class="article-title" itemprop="name">
+            How to make splash screen for Android and iOS on flutter
+        </h1>
+    
+
+
+            </header>
+        
+        
+            <div class="article-meta">
+                
+    <div class="article-date">
+        <a href="/blog/2019/10/04/Splash-screen-creation/" class="article-date">
+            <time datetime="2019-10-04T15:57:24.274Z" itemprop="datePublished">2019-10-04</time>
+        </a>
+    </div>
+
+                
+
+                
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/blog/tags/FLUTTER/">FLUTTER</a>
+    </div>
+
+            </div>
+        
+        
+
+        <div class="article-entry" itemprop="articleBody">
+            <p>In this article we will look how to make it in few ways, which way to choose is up to you.</p>
+<p><img src="/blog/css/images/splash-screen-example.jpg" alt="splash screen example"></p>
+<h2 id="Connect-the-flutter-package"><a href="#Connect-the-flutter-package" class="headerlink" title="Connect the flutter package."></a>Connect the flutter package.</h2><p> There are a lot of packages on <a href="https://pub.dartlang.org" target="_blank" rel="noopener">https://pub.dartlang.org</a> to help you in the most of cases and this case isn’t exception.<br>Just be sure to choose the package which have scored more than 90 points.<br>This will ensure you that you choose the most up-to-date and less prone to errors package.<br>For this case <a href="https://pub.dartlang.org/packages/splashscreen#-analysis-tab-" target="_blank" rel="noopener">https://pub.dartlang.org/packages/splashscreen#-analysis-tab-</a> will do just fine.<br>It has sufficient amount of settings to provide you control of your splash screen.</p>
+<hr>
+<pre><code>To use the package you have to add the dependency to your pubspec.yaml file</code></pre><figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">dependencies:</span><br><span class="line">    flutter:</span><br><span class="line">        sdk: flutter</span><br><span class="line">    splashscreen:</span><br></pre></td></tr></table></figure>
+
+<hr>
+<hr>
+<pre><code>Here is the example which is given us by the documentation:</code></pre><figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">new</span> SplashScreen(</span><br><span class="line">  seconds: <span class="number">14</span>,</span><br><span class="line">  navigateAfterSeconds: <span class="keyword">new</span> AfterSplash(),</span><br><span class="line">  title: <span class="keyword">new</span> Text(<span class="string">'Welcome In SplashScreen'</span>),</span><br><span class="line">  image: <span class="keyword">new</span> Image.asset(<span class="string">'screenshot.png'</span>),</span><br><span class="line">  backgroundColor: Colors.white,</span><br><span class="line">  styleTextUnderTheLoader: <span class="keyword">new</span> TextStyle(),</span><br><span class="line">  photoSize: <span class="number">100.0</span>,</span><br><span class="line">  loaderColor: Colors.red</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
+
+<hr>
+<p>In the end you will see something like this:</p>
+<p><img src="/blog/css/images/packageExample.png" alt="splash screen example"></p>
+<h2 id="Change-files-in-the-appropriate-folder"><a href="#Change-files-in-the-appropriate-folder" class="headerlink" title="Change files in the appropriate folder"></a>Change files in the appropriate folder</h2><h3 id="For-Android"><a href="#For-Android" class="headerlink" title="For Android"></a>For Android</h3><p>Navigate to:  android =&gt; app =&gt; src =&gt; main =&gt; res</p>
+<p><img src="/blog/css/images/androidPath.png" alt="Path to Android"></p>
+<p>Here we seen folders with xml files and png images with different size.</p>
+<p><img src="/blog/css/images/androidFiles.png" alt="Android files"></p>
+<p>Splash screen is active by the default but it has no image and background color is white so it makes no difference whether it is enabled or disabled. To change background color you have to create new file with xml extension in the values folder and define color and his alias. </p>
+<hr>
+<pre><code>Like this:</code></pre><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">resources</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">color</span> <span class="attr">name</span>=<span class="string">"lightGreen"</span>&gt;</span>#2ECC71<span class="tag">&lt;/<span class="name">color</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">resources</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<p>To enable the splash screen image you have to uncomment item tag in the folder called drawable. It’s sets the same image that you have on app icon. Conveniently isn’t it?</p>
+<hr>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- Modify this file to customize your launch splash screen --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">layer-list</span> <span class="attr">xmlns:android</span>=<span class="string">"http://schemas.android.com/apk/res/android"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">item</span> <span class="attr">android:drawable</span>=<span class="string">"@color/lightGreen"</span> /&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">&lt;!-- You can insert your own image assets here --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">item</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">bitmap</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:gravity</span>=<span class="string">"center"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:src</span>=<span class="string">"@mipmap/ic_launcher"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">item</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">layer-list</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="For-iOS"><a href="#For-iOS" class="headerlink" title="For iOS"></a>For iOS</h3><p>Navigate to: ios =&gt; Runner =&gt; Assets.xcassets =&gt; LaunchImage.imageset</p>
+<p><img src="/blog/css/images/iosPath.png" alt="Path to iOS"></p>
+<p>There you can see three images with different scale size, replace them with your images and that’s all.</p>
+<p><img src="/blog/css/images/iosImages.png" alt="Change this files"></p>
+<p>I case you want to change those files names you have to do it in contents.json file in the same folder.</p>
+<hr>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">"images"</span> : [</span><br><span class="line">    &#123;</span><br><span class="line">      <span class="attr">"idiom"</span> : <span class="string">"universal"</span>,</span><br><span class="line">      <span class="attr">"filename"</span> : <span class="string">"LaunchImage.png"</span>,</span><br><span class="line">      <span class="attr">"scale"</span> : <span class="string">"1x"</span></span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">      <span class="attr">"idiom"</span> : <span class="string">"universal"</span>,</span><br><span class="line">      <span class="attr">"filename"</span> : <span class="string">"LaunchImage@2x.png"</span>,</span><br><span class="line">      <span class="attr">"scale"</span> : <span class="string">"2x"</span></span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">      <span class="attr">"idiom"</span> : <span class="string">"universal"</span>,</span><br><span class="line">      <span class="attr">"filename"</span> : <span class="string">"LaunchImage@3x.png"</span>,</span><br><span class="line">      <span class="attr">"scale"</span> : <span class="string">"3x"</span></span><br><span class="line">    &#125;</span><br><span class="line">  ],</span><br><span class="line">  <span class="attr">"info"</span> : &#123;</span><br><span class="line">    <span class="attr">"version"</span> : <span class="number">1</span>,</span><br><span class="line">    <span class="attr">"author"</span> : <span class="string">"xcode"</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+
+        </div>
+    </div>
+</article>
+
+    <section id="comments">
+    
+        
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+
+    
+    </section>
+
+
+
+                        </div>
+                    </section>
+                    <aside id="sidebar">
+    <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
+<!--    <div class="sidebar-top">-->
+<!--        <p>follow:</p>-->
+<!--        <ul class="social-links">-->
+<!--            -->
+<!--                -->
+<!--                    <li>-->
+<!--                        <a class="social-tooltip" title="twitter" href="/blog/" target="_blank" rel="noopener">-->
+<!--                            <i class="icon fa fa-twitter"></i>-->
+<!--                        </a>-->
+<!--                    </li>-->
+<!--                -->
+<!--            -->
+<!--                -->
+<!--                    <li>-->
+<!--                        <a class="social-tooltip" title="facebook" href="/blog/" target="_blank" rel="noopener">-->
+<!--                            <i class="icon fa fa-facebook"></i>-->
+<!--                        </a>-->
+<!--                    </li>-->
+<!--                -->
+<!--            -->
+<!--                -->
+<!--                    <li>-->
+<!--                        <a class="social-tooltip" title="google-plus" href="/blog/" target="_blank" rel="noopener">-->
+<!--                            <i class="icon fa fa-google-plus"></i>-->
+<!--                        </a>-->
+<!--                    </li>-->
+<!--                -->
+<!--            -->
+<!--                -->
+<!--                    <li>-->
+<!--                        <a class="social-tooltip" title="github" href="https://github.com/ppoffice/hexo-theme-hueman" target="_blank" rel="noopener">-->
+<!--                            <i class="icon fa fa-github"></i>-->
+<!--                        </a>-->
+<!--                    </li>-->
+<!--                -->
+<!--            -->
+<!--                -->
+<!--                    <li>-->
+<!--                        <a class="social-tooltip" title="weibo" href="/blog/" target="_blank" rel="noopener">-->
+<!--                            <i class="icon fa fa-weibo"></i>-->
+<!--                        </a>-->
+<!--                    </li>-->
+<!--                -->
+<!--            -->
+<!--                -->
+<!--                    <li>-->
+<!--                        <a class="social-tooltip" title="rss" href="/blog/" target="_blank" rel="noopener">-->
+<!--                            <i class="icon fa fa-rss"></i>-->
+<!--                        </a>-->
+<!--                    </li>-->
+<!--                -->
+<!--            -->
+<!--        </ul>-->
+<!--    </div>-->
+    
+        
+    <nav id="article-nav">
+        
+        
+            <a href="/blog/2018/09/26/CSS-Grid-Layout/" id="article-nav-older" class="article-nav-link-wrap">
+                <strong class="article-nav-caption">older</strong>
+                <p class="article-nav-title">CSS Grid Layout short instruction</p>
+                <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
+            </a>
+        
+    </nav>
+
+
+    
+    <div class="widgets-container">
+        
+            
+                
+
+            
+                
+    <div class="widget-wrap">
+        <h3 class="widget-title">recents</h3>
+        <div class="widget">
+            <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/blog/2019/10/04/Splash-screen-creation/" class="thumbnail">
+        
+        
+                <span style="background-image:url(/blog/css/images/splash-screen-example.jpg)" alt="How to make splash screen for Android and iOS on flutter" class="thumbnail-image"></span>
+        
+        
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/blog/2019/10/04/Splash-screen-creation/" class="title">How to make splash screen for Android and iOS on flutter</a></p>
+                            <p class="item-date"><time datetime="2019-10-04T15:57:24.274Z" itemprop="datePublished">2019-10-04</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/blog/2018/09/26/CSS-Grid-Layout/" class="thumbnail">
+        
+        
+                <span style="background-image:url(/blog/css/images/grid-browser-support.png)" alt="CSS Grid Layout short instruction" class="thumbnail-image"></span>
+        
+        
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/blog/2018/09/26/CSS-Grid-Layout/" class="title">CSS Grid Layout short instruction</a></p>
+                            <p class="item-date"><time datetime="2018-09-26T12:17:00.000Z" itemprop="datePublished">2018-09-26</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+            
+                
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">archives</h3>
+        <div class="widget">
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2019/10/">October 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2018/09/">September 2018</a><span class="archive-list-count">1</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">tags</h3>
+        <div class="widget">
+            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/CSS/">CSS</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/FLUTTER/">FLUTTER</a><span class="tag-list-count">1</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                <!---->
+<!--    <div class="widget-wrap widget-float">-->
+<!--        <h3 class="widget-title">etiqueta cloud</h3>-->
+<!--        <div class="widget tagcloud">-->
+<!--            <a href="/blog/tags/CSS/" style="font-size: 10px;">CSS</a> <a href="/blog/tags/FLUTTER/" style="font-size: 10px;">FLUTTER</a>-->
+<!--        </div>-->
+<!--    </div>-->
+<!---->
+
+            
+                <!---->
+<!--    <div class="widget-wrap widget-list">-->
+<!--        <h3 class="widget-title">links</h3>-->
+<!--        <div class="widget">-->
+<!--            <ul>-->
+<!--                -->
+<!--                    <li>-->
+<!--                        <a href="http://hexo.io">Hexo</a>-->
+<!--                    </li>-->
+<!--                -->
+<!--            </ul>-->
+<!--        </div>-->
+<!--    </div>-->
+<!---->
+
+            
+        
+    </div>
+</aside>
+
+                </div>
+            </div>
+        </div>
+        <footer>
+    <div class="container">
+        <div class="row">
+            <div class="footer-wrapper">
+                <div class="contacts">
+                    <div class="contacts__logo">
+                        <a href="#">
+                            <img src="/blog/css/images/logo.png" alt="JsDaddy">
+                        </a>
+                    </div>
+                    <div class="contacts__email">
+                        <a href="mailto:info@jsdaddy.io">
+                            <i class="fa fa-envelope-o" aria-hidden="true"></i>info@jsdaddy.io</a>
+                    </div>
+                    <div class="contacts__skype">
+                        <a href="skype:juncker8888">
+                            <i class="fa fa-skype" aria-hidden="true"></i>juncker8888</a>
+                    </div>
+                    <div class="contacts__skype">
+                        <a href="skype:sirnip86">
+                            <i class="fa fa-skype" aria-hidden="true"></i>sirnip86</a>
+                    </div>
+                    <div class="contacts__addres">
+                        Kharkiv, Ukraine
+                    </div>
+                </div>
+                <div class="navigation-footer">
+                    <ul>
+                        <li>
+                            <a href="#services">Services</a>
+                        </li>
+                        <li>
+                            <a href="#dev-process">Development Process</a>
+                        </li>
+                        <li>
+                            <a href="#technologies">Technologies</a>
+                        </li>
+                        <li>
+                            <a href="#header">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="#testimonials">Testimonials</a>
+                        </li>
+                        <li>
+                            <a href="#footer">About Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="social">
+                    <div>Social</div>
+                    <ul>
+<!--                        <li>-->
+<!--                            <a class="facebook" href="https://www.facebook.com/JSDaddyUkraine/">-->
+<!--                                <i class="fa fa-facebook"></i>-->
+<!--                            </a>-->
+<!--                        </li>-->
+                        <li>
+                            <a class="linkedin" href="https://www.linkedin.com/company/jsdaddy/">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="github" href="https://github.com/JsDaddy">
+                                <i class="fa fa-github"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copy-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    Copyright Ⓒ 2017-2019 JSDaddy
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<form id="popup-form" class="popup-form mfp-hide white-popup-block">
+    <h3>Contact Us</h3>
+    <div class="popup-form__input-wrapper">
+        <label for="name">Name</label><br>
+        <input id="name" name="name" type="text">
+        <p class="popup-form__input-wrapper_invalid-message" id="name_error">This field can not be empty</p>
+    </div>
+    <div class="popup-form__input-wrapper">
+        <label for="email">Email</label><br>
+        <input id="email" name="email" type="email">
+        <p class="popup-form__input-wrapper_invalid-message" id="email_error">This field must contain valid email</p>
+    </div>
+    <div class="popup-form__input-wrapper">
+        <label for="Textarea">Message</label><br>
+        <textarea id="message"></textarea>
+        <p class="popup-form__input-wrapper_invalid-message" id="textarea_error">This field can not be empty</p>
+    </div>
+    <div class="popup-form__btn-wrapper">
+        <button class="btn" id="form__submit">Contact Us</button>
+    </div>
+    <div class="success-message">
+        <div class="success-message__icon">
+            <i class="fa fa-check" aria-hidden="true"></i>
+        </div>
+        <span>Success!</span></div>
+</form>
+
+        
+    
+    <script>
+    var disqus_shortname = 'hexo-theme-hueman';
+    
+    
+    var disqus_url = 'http://yoursite.com/2019/10/04/Splash-screen-creation/';
+    
+    (function() {
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+
+
+
+
+    
+        <script src="/blog/libs/lightgallery/js/lightgallery.min.js"></script>
+        <script src="/blog/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+        <script src="/blog/libs/lightgallery/js/lg-pager.min.js"></script>
+        <script src="/blog/libs/lightgallery/js/lg-autoplay.min.js"></script>
+        <script src="/blog/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+        <script src="/blog/libs/lightgallery/js/lg-zoom.min.js"></script>
+        <script src="/blog/libs/lightgallery/js/lg-hash.min.js"></script>
+        <script src="/blog/libs/lightgallery/js/lg-share.min.js"></script>
+        <script src="/blog/libs/lightgallery/js/lg-video.min.js"></script>
+    
+    
+        <script src="/blog/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+    
+    
+
+
+
+<!-- Custom Scripts -->
+<script src="/blog/js/mail.js"></script>
+<script src="/blog/js/main.js"></script>
+
+    </div>
+</body>
+</html>
