@@ -1,9 +1,19 @@
 header
-    background #fff
-#header
-    z-index: 20
-    position: static;
     width: 100%
+    min-height: 85px
+    display: flex
+    flex-direction: row
+    align-items: center
+    padding-top: 25px
+    z-index: 50
+    top: 0
+    left: 0
+    transition: width 0.15s ease, padding-top ease 0.15s, min-height ease 0.15s
+    box-shadow: 0px 0px 10px rgba(224, 224, 224, 0.9)
+//#header
+//    z-index: 20
+//    position: static;
+//    width: 100%
 //background: color-header-background
 //padding-bottom: nav-height
 //position: relative
@@ -11,9 +21,33 @@ header
     margin-bottom: 10px
     img
         max-height 60px
-#header-outer
-    height: 100%
-    position: relative
+//#header-outer
+//    height: 100%
+//    position: relative
+
+#header_container, #header
+    transition: all 1s ease
+    background: #fff
+    top: 0
+    #header_wrap
+        margin-left: -45px
+        margin-right: -45px
+
+#header.default
+    width: 100%
+    position: fixed
+    padding-top: 10px
+    padding-bottom: 10px
+    z-index: 10
+
+#header.fixed
+    padding-top: 10px
+    position: fixed
+    left: 0
+    top: 0
+    width: 100%
+    z-index: 100
+    box-shadow: 0px 0px 10px rgba(224, 224, 224, 0.9)
 
 #header-inner
     position: relative
