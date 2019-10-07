@@ -168,6 +168,22 @@ header {
   margin-left: -45px;
   margin-right: -45px;
 }
+#header_container #header_wrap h5,
+#header #header_wrap h5 {
+  font-size: 30px;
+  text-align: center;
+  font-family: "ralewayBlack", sans-serif;
+  margin-left: 20px;
+}
+#header_container #header_wrap h5 a,
+#header #header_wrap h5 a {
+  color: #000;
+  margin-left: 5px;
+}
+#header_container #header_wrap h5 a i,
+#header #header_wrap h5 a i {
+  font-size: 40px !important;
+}
 #header.default {
   width: 100%;
   position: fixed;
