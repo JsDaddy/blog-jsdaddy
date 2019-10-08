@@ -163,26 +163,22 @@ header {
   background: #fff;
   top: 0;
 }
-#header_container #header_wrap,
-#header #header_wrap {
-  margin-left: -45px;
-  margin-right: -45px;
-}
-#header_container #header_wrap h5,
-#header #header_wrap h5 {
-  font-size: 30px;
+#header_container #header-wrap h5,
+#header #header-wrap h5 {
+  font-size: 20px;
   text-align: center;
   font-family: "ralewayBlack", sans-serif;
-  margin-left: 20px;
+  margin-left: 55px;
+  margin-bottom: 6px;
 }
-#header_container #header_wrap h5 a,
-#header #header_wrap h5 a {
+#header_container #header-wrap h5 a,
+#header #header-wrap h5 a {
   color: #000;
   margin-left: 5px;
 }
-#header_container #header_wrap h5 a i,
-#header #header_wrap h5 a i {
-  font-size: 40px !important;
+#header_container #header-wrap h5 a i,
+#header #header-wrap h5 a i {
+  font-size: 30px !important;
 }
 #header.default {
   width: 100%;
@@ -1754,7 +1750,16 @@ i.icon:before {
 .highlight .code .strong {
   font-weight: bold;
 }
+@media only screen and (min-width: 600px) {
+  #main .main-body-inner {
+    padding: 0 !important;
+  }
+}
 @media only screen and (min-width: 960px) {
+  #main,
+  .main-body-inner {
+    padding: 0;
+  }
   .nav-container-inner {
     display: block !important;
   }
@@ -1777,95 +1782,11 @@ i.icon:before {
     margin-top: -50px;
   }
   .main-body-inner {
+    padding-left: 0;
     padding-left: 50px;
     background-position: -290px 0 !important;
   }
   .main-body-inner #sidebar {
-    left: 0;
-    background: url("images/s-left.png") repeat-y left 0;
-    margin: 0;
-    height: 100%;
-    position: absolute;
-    overflow: hidden;
-    width: 50px;
-    -webkit-transition: width 0.2s ease-in 0.2s;
-    -moz-transition: width 0.2s ease-in 0.2s;
-    -ms-transition: width 0.2s ease-in 0.2s;
-    transition: width 0.2s ease-in 0.2s;
-  }
-  .main-body-inner #sidebar:before,
-  .main-body-inner #sidebar:after {
-    content: "";
-    display: table;
-  }
-  .main-body-inner #sidebar:after {
-    clear: both;
-  }
-  .main-body-inner #sidebar .sidebar-toggle {
-    display: block;
-    padding: 6px;
-    color: rgba(255,255,255,0.7);
-    text-align: center;
-    height: 50px;
-    background: #006bde;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-  }
-  .main-body-inner #sidebar .sidebar-toggle .toggle {
-    line-height: 38px;
-    font-size: 38px;
-    width: 38px;
-    font-family: fontawesome;
-  }
-  .main-body-inner #sidebar .sidebar-toggle .toggle:before {
-    content: '\f101';
-  }
-  .main-body-inner #sidebar .sidebar-top {
-    padding: 10px 30px;
-    background: none;
-    border-bottom: 1px solid #ddd;
-  }
-  .main-body-inner #sidebar .sidebar-top p,
-  .main-body-inner #sidebar .sidebar-top a,
-  .main-body-inner #sidebar .sidebar-top i {
-    color: #666;
-  }
-  .main-body-inner #sidebar #article-nav,
-  .main-body-inner #sidebar .widgets-container,
-  .main-body-inner #sidebar .sidebar-top {
-    opacity: 0;
-    -webkit-transition: opacity 0.2s ease-in;
-    -moz-transition: opacity 0.2s ease-in;
-    -ms-transition: opacity 0.2s ease-in;
-    transition: opacity 0.2s ease-in;
-  }
-  .main-body-inner #sidebar.expend {
-    width: 340px;
-    overflow-y: auto;
-    z-index: 2;
-    -webkit-transition: width 0.2s ease-in;
-    -moz-transition: width 0.2s ease-in;
-    -ms-transition: width 0.2s ease-in;
-    transition: width 0.2s ease-in;
-  }
-  .main-body-inner #sidebar.expend .toggle:before {
-    content: '\f100';
-  }
-  .main-body-inner #sidebar.expend #article-nav,
-  .main-body-inner #sidebar.expend .widgets-container,
-  .main-body-inner #sidebar.expend .sidebar-top {
-    opacity: 1;
-    -webkit-transition: opacity 0.2s ease-in 0.2s;
-    -moz-transition: opacity 0.2s ease-in 0.2s;
-    -ms-transition: opacity 0.2s ease-in 0.2s;
-    transition: opacity 0.2s ease-in 0.2s;
-  }
-  .main-body-inner #sidebar.expend .sidebar-top {
-    display: block;
-  }
-  .main-body-inner #sidebar.expend .sidebar-top .social-links .social-tooltip:after,
-  .main-body-inner #sidebar.expend .sidebar-top .social-links .social-tooltip:before {
     display: none;
   }
   #main .main-body-header,
@@ -1876,6 +1797,9 @@ i.icon:before {
 @media only screen and (max-width: 479px) {
   .container {
     padding: 0px;
+  }
+  #main .main-body-header {
+    padding-left: 0;
   }
   #header .logo-wrap {
     width: 100%;
