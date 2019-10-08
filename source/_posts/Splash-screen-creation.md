@@ -1,6 +1,9 @@
 ---
 title: How to make splash screen for Android and iOS on flutter
+tags:
+  - FLUTTER
 ---
+
 In this article we will look how to make it in few ways, which way to choose is up to you.
 
 ![splash screen example](/blog/css/images/splash-screen-example.jpg)

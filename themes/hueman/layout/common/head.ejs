@@ -5,23 +5,23 @@
 
     <%- partial('pwa/index') %>
     <%
-        var title = page.title;
-        if (is_archive()) {
-            title = __('index.archive');
-            if (is_month()) {
-                title += ': ' + page.year + '/' + page.month;
-            } else if (is_year()) {
-                title += ': ' + page.year;
-            }
-        } else if (is_category()) {
-            title = __('index.category') + ': ' + page.category;
-        } else if (is_tag()) {
-            title = __('index.tag') + ': ' + page.tag;
+    var title = page.title;
+    if (is_archive()) {
+        title = __('index.archive');
+        if (is_month()) {
+            title += ': ' + page.year + '/' + page.month;
+        } else if (is_year()) {
+            title += ': ' + page.year;
         }
+    } else if (is_category()) {
+        title = __('index.category') + ': ' + page.category;
+    } else if (is_tag()) {
+        title = __('index.tag') + ': ' + page.tag;
+    }
     %>
     <title><% if (title) { %><%= title %> | <% } %><%= config.title %></title>
     <% if (theme.plugins.bing_site_verification) { %>
-      <meta name="msvalidate.01" content="<%- theme.plugins.bing_site_verification %>" />
+        <meta name="msvalidate.01" content="<%- theme.plugins.bing_site_verification %>" />
     <% } %>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <% if (page.tags) {
@@ -30,7 +30,7 @@
             keywords.push(page.tags.data[i].name);
         }
     %>
-        <meta name="keywords" content="<%= keywords.join(',') %>" />
+    <meta name="keywords" content="<%= keywords.join(',') %>" />
     <% } %>
     <%- open_graph({
         image:          thumbnail(page),
@@ -40,7 +40,7 @@
         google_plus:    theme.miscellaneous.open_graph.google_plus,
     }) %>
     <%- meta(page) %>
-
+    <base href="/">
     <% if (theme.customize && theme.customize.social_links && theme.customize.social_links.rss) { %>
         <link rel="alternate" href="<%- theme.customize.social_links.rss %>" title="<%= config.title %>" type="application/atom+xml" />
     <% } %>
@@ -56,6 +56,6 @@
     <%- css('css/style') %>
     <%- css('css/main.min') %>
 
-    <%- js('libs/jquery/3.4.1/jquery.min') %>
+    <%- js('libs/jquery/3.3.1/jquery.min') %>
     <%- partial('plugin/scripts', { isHead: true }) %>
 </head>

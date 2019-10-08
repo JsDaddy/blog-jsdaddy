@@ -1,15 +1,15 @@
 FROM node:10
 
-#WORKDIR /usr/src/app
-RUN npm i -g hexo
-RUN npm install -g ts-node
+WORKDIR /usr/src/app
 
-RUN npm install -g typescript
+RUN npm i -g hexo
 
 COPY package*.json ./
 
 RUN npm install
 
-RUN hexo clean
+COPY . /usr/src/app
 
-RUN hexo server
+RUN hexo deploy
+
+CMD ["hexo", "server"]
