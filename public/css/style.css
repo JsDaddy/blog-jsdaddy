@@ -168,22 +168,24 @@ header .nav-wrapper nav ul li a {
   background: #fff;
   top: 0;
 }
-#header_container #header-wrap h5,
-#header #header-wrap h5 {
-  font-size: 20px;
+#header_container #header-wrap h1,
+#header #header-wrap h1 {
+  color: #000;
+  font-weight: inherit;
+  font-family: inherit;
+  font-style: inherit;
+  font-size: 30px;
   text-align: center;
-  font-family: "ralewayBlack", sans-serif;
-  margin-left: 55px;
-  margin-bottom: 6px;
+  margin-left: 20px;
 }
-#header_container #header-wrap h5 a,
-#header #header-wrap h5 a {
+#header_container #header-wrap h1 a,
+#header #header-wrap h1 a {
   color: #000;
   margin-left: 5px;
 }
-#header_container #header-wrap h5 a i,
-#header #header-wrap h5 a i {
-  font-size: 30px !important;
+#header_container #header-wrap h1 a i,
+#header #header-wrap h1 a i {
+  font-size: 40px !important;
 }
 #header.default {
   width: 100%;
@@ -398,7 +400,7 @@ header .nav-wrapper nav ul li a {
   -moz-transition: 0.2s ease-in;
   -ms-transition: 0.2s ease-in;
   transition: 0.2s ease-in;
-  font: 16px "Titillium Web", "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", sans-serif;
+  font: 16px "Roboto";
   color: rgba(255,255,255,0.7);
 }
 .search-form-input:focus,
@@ -1075,7 +1077,7 @@ a.article-title:hover {
 .article-entry blockquote footer {
   font-size: 14px;
   margin: 1.6em 0;
-  font-family: "Titillium Web", "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", sans-serif;
+  font-family: "Roboto";
 }
 .article-entry blockquote footer cite:before {
   content: "—";
@@ -1187,7 +1189,7 @@ a.article-title:hover {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  font: 14px "Titillium Web", "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", sans-serif;
+  font: 14px "Roboto";
   padding: 0 15px;
   color: #555;
   outline: none;
@@ -2069,7 +2071,7 @@ body,
 }
 body {
   background: #eaeaea;
-  font: 14px "Titillium Web", "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", sans-serif;
+  font: 14px "Roboto";
   -webkit-text-size-adjust: 100%;
 }
 code {
