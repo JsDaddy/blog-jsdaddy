@@ -148,6 +148,11 @@ header {
   -webkit-box-shadow: 0px 0px 10px rgba(224,224,224,0.9);
   box-shadow: 0px 0px 10px rgba(224,224,224,0.9);
 }
+header .nav-wrapper nav ul li a {
+  color: #232422;
+  font-size: 17px;
+  font-weight: 600 !important;
+}
 .logo {
   margin-bottom: 10px;
 }
@@ -1750,16 +1755,20 @@ i.icon:before {
 .highlight .code .strong {
   font-weight: bold;
 }
-@media only screen and (min-width: 600px) {
-  #main .main-body-inner {
+@media only screen and (min-width: 320px) and (max-width: 1200px) {
+  .main-body-inner {
     padding: 0 !important;
   }
 }
-@media only screen and (min-width: 960px) {
-  #main,
-  .main-body-inner {
-    padding: 0;
+@media only screen and (min-width: 900px) and (max-width: 1200px) {
+  #sidebar {
+    display: none !important;
   }
+  #sidebar ::before {
+    display: none;
+  }
+}
+@media only screen and (min-width: 960px) {
   .nav-container-inner {
     display: block !important;
   }
@@ -1787,7 +1796,10 @@ i.icon:before {
     background-position: -290px 0 !important;
   }
   .main-body-inner #sidebar {
-    display: none;
+    display: none !important;
+  }
+  .main-body-inner #sidebar ::before {
+    display: none !important;
   }
   #main .main-body-header,
   #main .archive-year-wrap {
