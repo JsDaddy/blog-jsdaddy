@@ -1,8 +1,8 @@
 ---
-title: CI/CD with Github Actions
+title: CI/CD with GiHub Actions
 tags:
   - CI/CD
-  - Development process
+  - DEVELOPMENT PROCESS
 ---
 ![](/blog/css/images/git.png)
 
