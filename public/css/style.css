@@ -150,8 +150,8 @@ header {
 }
 header .nav-wrapper nav ul li a {
   color: #232422;
-  font-size: 16px;
-  font-weight: 400;
+  font-size: 17px;
+  font-weight: 600 !important;
 }
 .logo {
   margin-bottom: 10px;
