@@ -2,6 +2,7 @@
 title: How to make splash screen for Android and iOS on flutter
 tags:
   - FLUTTER
+date: 2018-10-05 12:00:00
 ---
 
 In this article we will look how to make it in few ways, which way to choose is up to you.
