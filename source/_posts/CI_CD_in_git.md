@@ -2,7 +2,7 @@
 title: CI/CD with GiHub Actions
 tags:
   - CI/CD
-  - DEVELOPMENT PROCESS
+  - Development
 ---
 ![](/blog/css/images/git.png)
 
