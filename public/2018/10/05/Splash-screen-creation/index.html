@@ -6,27 +6,27 @@
     
 
     
-    <title>CI/CD with GiHub Actions | JSDaddy blog - we share our knowledge</title>
+    <title>How to make splash screen for Android and iOS on flutter | JSDaddy blog - we share our knowledge</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=6">
     
-    <meta name="keywords" content="CI/CD,Development">
+    <meta name="keywords" content="FLUTTER">
     
     <meta name="Description" content="JSDaddy blog">
-    <meta name="description" content="GitHub Actions now makes it easier to automate how you build, test, and deploy your projects on any platform, including Linux, macOS, and Windows. Run your workflows in a container or in a virtual ma">
-<meta name="keywords" content="CI&#x2F;CD,Development">
+    <meta name="description" content="In this article we will look how to make it in few ways, which way to choose is up to you.  Connect the flutter package. There are a lot of packages on https://pub.dartlang.org to help you in the most">
+<meta name="keywords" content="FLUTTER">
 <meta property="og:type" content="article">
-<meta property="og:title" content="CI&#x2F;CD with GiHub Actions">
-<meta property="og:url" content="http://yoursite.com/2019/10/10/CI_CD_in_git/index.html">
+<meta property="og:title" content="How to make splash screen for Android and iOS on flutter">
+<meta property="og:url" content="http://yoursite.com/2018/10/05/Splash-screen-creation/index.html">
 <meta property="og:site_name" content="JSDaddy blog - we share our knowledge">
-<meta property="og:description" content="GitHub Actions now makes it easier to automate how you build, test, and deploy your projects on any platform, including Linux, macOS, and Windows. Run your workflows in a container or in a virtual ma">
+<meta property="og:description" content="In this article we will look how to make it in few ways, which way to choose is up to you.  Connect the flutter package. There are a lot of packages on https://pub.dartlang.org to help you in the most">
 <meta property="og:locale" content="default">
-<meta property="og:image" content="http://yoursite.com/blog/css/images/git.png">
-<meta property="og:updated_time" content="2019-10-10T12:29:08.588Z">
+<meta property="og:image" content="http://yoursite.com/blog/css/images/splash-screen-example.jpg">
+<meta property="og:updated_time" content="2019-10-10T13:45:13.309Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="CI&#x2F;CD with GiHub Actions">
-<meta name="twitter:description" content="GitHub Actions now makes it easier to automate how you build, test, and deploy your projects on any platform, including Linux, macOS, and Windows. Run your workflows in a container or in a virtual ma">
-<meta name="twitter:image" content="http://yoursite.com/blog/css/images/git.png">
+<meta name="twitter:title" content="How to make splash screen for Android and iOS on flutter">
+<meta name="twitter:description" content="In this article we will look how to make it in few ways, which way to choose is up to you.  Connect the flutter package. There are a lot of packages on https://pub.dartlang.org to help you in the most">
+<meta name="twitter:image" content="http://yoursite.com/blog/css/images/splash-screen-example.jpg">
     
     <base href="/">
     
@@ -120,14 +120,14 @@
                     <section id="main">
                         
                         <div class="main-body-content">
-                            <article id="post-CI_CD_in_git" class="article article-single article-type-post" itemscope itemprop="blogPost">
+                            <article id="post-Splash-screen-creation" class="article article-single article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
             <header class="article-header">
                 
     
         <h1 class="article-title" itemprop="name">
-            CI/CD with GiHub Actions
+            How to make splash screen for Android and iOS on flutter
         </h1>
     
 
@@ -138,8 +138,8 @@
             <div class="article-meta">
                 
     <div class="article-date">
-        <a href="/blog/2019/10/10/CI_CD_in_git/" class="article-date">
-            <time datetime="2019-10-10T12:29:08.587Z" itemprop="datePublished">2019-10-10</time>
+        <a href="/blog/2018/10/05/Splash-screen-creation/" class="article-date">
+            <time datetime="2018-10-05T09:00:00.000Z" itemprop="datePublished">2018-10-05</time>
         </a>
     </div>
 
@@ -148,7 +148,7 @@
                 
     <div class="article-tag">
         <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/blog/tags/CI-CD/">CI/CD</a>, <a class="tag-link" href="/blog/tags/Development/">Development</a>
+        <a class="tag-link" href="/blog/tags/FLUTTER/">FLUTTER</a>
     </div>
 
             </div>
@@ -156,41 +156,42 @@
         
 
         <div class="article-entry" itemprop="articleBody">
-            <p><img src="/blog/css/images/git.png" alt></p>
-<p>GitHub Actions now makes it easier to automate how you build, test, and deploy your projects on any platform, including Linux, macOS, and Windows. Run your workflows in a container or in a virtual machine. Actions also supports more languages and frameworks than ever, including Node.js, Python, Java, PHP, Ruby, C/C++, .NET, Android, and iOS. You can test your web service and its database together by simply adding some docker-compose to your workflow file.</p>
-<h2 id="Setting-up-continuous-integration-using-GitHub-Actions"><a href="#Setting-up-continuous-integration-using-GitHub-Actions" class="headerlink" title="Setting up continuous integration using GitHub Actions"></a>Setting up continuous integration using GitHub Actions</h2><p>You can set up continuous integration for your project using a workflow template that matches the language and tooling you want to use.</p>
-<p>Anyone with write permission to a repository can set up continuous integration (CI) using GitHub Actions.</p>
-<p>1. On GitHub, navigate to the main page of the repository.<br>2. Under your repository name, click Actions.<br><img src="/blog/css/images/action_button_location.png" alt="action button location"><br>3. Find the template that matches the language and tooling you want to use, then click Set up this workflow.<br><img src="/blog/css/images/setup-workflow-button.png" alt="setup workflow button location"><br>4. Click Start commit.<br><img src="/blog/css/images/start_commit_button_location.png" alt="start commit button location"><br>5. Type a short, meaningful commit message that describes the change you made to the file. Below the commit message fields, decide whether to add your commit to the current branch or to a new branch and then create a pull request.</p>
-<p>After you set up CI, you can customize the workflow to meet your needs.</p>
-<h2 id="Customizing-a-workflow"><a href="#Customizing-a-workflow" class="headerlink" title="Customizing a workflow"></a>Customizing a workflow</h2><p>You can create more than one workflow in a repository. You must store workflows in the <code>.github/workflows</code> directory in the root of your repository. </p>
-<p>Workflows must have at least one job, and jobs contain a set of steps that perform individual tasks. Steps can run commands or use an action. You can create your own actions or use actions shared by the GitHub community and customize them as needed.</p>
-<p>You can configure a workflow to start when a GitHub event occurs, on a schedule, or from an external event.</p>
-<p>You need to configure workflows using YAML syntax, and save them as workflow files in your repository. Once you’ve successfully created a YAML workflow file and triggered the workflow, you will see the build logs, tests results, artifacts, and statuses for each step of your workflow.<br><img src="/blog/css/images/annotated-workflow.png" alt="annotated workflow"></p>
-<h2 id="Creating-a-new-workflow-file"><a href="#Creating-a-new-workflow-file" class="headerlink" title="Creating a new workflow file"></a>Creating a new workflow file</h2><p>1. At the root of your repository, create a directory named .github/workflows to store your workflow files.<br>2. In <code>.github/workflows</code>, add a <code>.yml</code> or <code>.yaml</code> file for your workflow. For example, .github/workflows/continuous-integration-workflow.yml.<br>3. Choose events to trigger an action, add actions, and customize your workflow.<br>4. Commit your changes in the workflow file to the branch where you want your workflow to run.</p>
-<p>Example of workflow file</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">name:</span> <span class="string">Node</span> <span class="string">CI</span></span><br><span class="line"></span><br><span class="line"><span class="attr">on:</span> <span class="string">[push]</span></span><br><span class="line"></span><br><span class="line"><span class="attr">jobs:</span></span><br><span class="line"><span class="attr">  build:</span></span><br><span class="line"></span><br><span class="line"><span class="attr">    runs-on:</span> <span class="string">ubuntu-latest</span></span><br><span class="line"></span><br><span class="line"><span class="attr">    strategy:</span></span><br><span class="line"><span class="attr">      matrix:</span></span><br><span class="line"><span class="attr">        node-version:</span> <span class="string">[8.x,</span> <span class="number">10.</span><span class="string">x,</span> <span class="number">12.</span><span class="string">x]</span></span><br><span class="line"></span><br><span class="line"><span class="attr">    steps:</span></span><br><span class="line"><span class="attr">    - uses:</span> <span class="string">actions/checkout@v1</span></span><br><span class="line"><span class="attr">    - name:</span> <span class="string">Use</span> <span class="string">Node.js</span> <span class="string">$&#123;&#123;</span> <span class="string">matrix.node-version</span> <span class="string">&#125;&#125;</span></span><br><span class="line"><span class="attr">      uses:</span> <span class="string">actions/setup-node@v1</span></span><br><span class="line"><span class="attr">      with:</span></span><br><span class="line"><span class="attr">        node-version:</span> <span class="string">$&#123;&#123;</span> <span class="string">matrix.node-version</span> <span class="string">&#125;&#125;</span></span><br><span class="line"><span class="attr">    - name:</span> <span class="string">npm</span> <span class="string">install,</span> <span class="string">build,</span> <span class="string">and</span> <span class="string">test</span></span><br><span class="line"><span class="attr">      run:</span> <span class="string">|</span></span><br><span class="line"><span class="string">        npm install</span></span><br><span class="line"><span class="string">        npm run build --if-present</span></span><br><span class="line"><span class="string">        npm test</span></span><br><span class="line"><span class="string"></span><span class="attr">      env:</span></span><br><span class="line"><span class="attr">        CI:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+            <p>In this article we will look how to make it in few ways, which way to choose is up to you.</p>
+<p><img src="/blog/css/images/splash-screen-example.jpg" alt="splash screen example"></p>
+<h2 id="Connect-the-flutter-package"><a href="#Connect-the-flutter-package" class="headerlink" title="Connect the flutter package."></a>Connect the flutter package.</h2><p> There are a lot of packages on <a href="https://pub.dartlang.org" target="_blank" rel="noopener">https://pub.dartlang.org</a> to help you in the most of cases and this case isn’t exception.<br>Just be sure to choose the package which have scored more than 90 points.<br>This will ensure you that you choose the most up-to-date and less prone to errors package.<br>For this case <a href="https://pub.dartlang.org/packages/splashscreen#-analysis-tab-" target="_blank" rel="noopener">https://pub.dartlang.org/packages/splashscreen#-analysis-tab-</a> will do just fine.<br>It has sufficient amount of settings to provide you control of your splash screen.</p>
+<hr>
+<pre><code>To use the package you have to add the dependency to your pubspec.yaml file</code></pre><figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">dependencies:</span><br><span class="line">    flutter:</span><br><span class="line">        sdk: flutter</span><br><span class="line">    splashscreen:</span><br></pre></td></tr></table></figure>
 
-<h2 id="Events-that-trigger-workflows"><a href="#Events-that-trigger-workflows" class="headerlink" title="Events that trigger workflows"></a>Events that trigger workflows</h2><p>Example using one event</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">on:</span> <span class="string">push</span></span><br></pre></td></tr></table></figure>
+<hr>
+<hr>
+<pre><code>Here is the example which is given us by the documentation:</code></pre><figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">new</span> SplashScreen(</span><br><span class="line">  seconds: <span class="number">14</span>,</span><br><span class="line">  navigateAfterSeconds: <span class="keyword">new</span> AfterSplash(),</span><br><span class="line">  title: <span class="keyword">new</span> Text(<span class="string">'Welcome In SplashScreen'</span>),</span><br><span class="line">  image: <span class="keyword">new</span> Image.asset(<span class="string">'screenshot.png'</span>),</span><br><span class="line">  backgroundColor: Colors.white,</span><br><span class="line">  styleTextUnderTheLoader: <span class="keyword">new</span> TextStyle(),</span><br><span class="line">  photoSize: <span class="number">100.0</span>,</span><br><span class="line">  loaderColor: Colors.red</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
 
-<p>Example using more than one event</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">on:</span> <span class="string">[push,</span> <span class="string">pull_request]</span></span><br></pre></td></tr></table></figure>
+<hr>
+<p>In the end you will see something like this:</p>
+<p><img src="/blog/css/images/packageExample.png" alt="splash screen example"></p>
+<h2 id="Change-files-in-the-appropriate-folder"><a href="#Change-files-in-the-appropriate-folder" class="headerlink" title="Change files in the appropriate folder"></a>Change files in the appropriate folder</h2><h3 id="For-Android"><a href="#For-Android" class="headerlink" title="For Android"></a>For Android</h3><p>Navigate to:  android =&gt; app =&gt; src =&gt; main =&gt; res</p>
+<p><img src="/blog/css/images/androidPath.png" alt="Path to Android"></p>
+<p>Here we seen folders with xml files and png images with different size.</p>
+<p><img src="/blog/css/images/androidFiles.png" alt="Android files"></p>
+<p>Splash screen is active by the default but it has no image and background color is white so it makes no difference whether it is enabled or disabled. To change background color you have to create new file with xml extension in the values folder and define color and his alias. </p>
+<hr>
+<pre><code>Like this:</code></pre><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">resources</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">color</span> <span class="attr">name</span>=<span class="string">"lightGreen"</span>&gt;</span>#2ECC71<span class="tag">&lt;/<span class="name">color</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">resources</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<p><strong>See <a href="https://help.github.com/en/articles/events-that-trigger-workflows#webhook-events" target="_blank" rel="noopener">full list</a> of events with examples.</strong><br><strong>For some event types you may need to <a href="https://help.github.com/en/articles/creating-a-personal-access-token-for-the-command-line" target="_blank" rel="noopener">create an access token</a>.</strong></p>
-<p>To test across multiple operating systems, platforms, and language versions at the same time, you can configure a build matrix.</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">runs-on:</span> <span class="string">$&#123;&#123;</span> <span class="string">matrix.os</span> <span class="string">&#125;&#125;</span></span><br><span class="line"><span class="attr">strategy:</span></span><br><span class="line"><span class="attr">  matrix:</span></span><br><span class="line"><span class="attr">    os:</span> <span class="string">[ubuntu-14.04,</span> <span class="string">ubuntu-18.04]</span></span><br><span class="line"><span class="attr">    node:</span> <span class="string">[6,</span> <span class="number">8</span><span class="string">,</span> <span class="number">10</span><span class="string">]</span></span><br></pre></td></tr></table></figure>
+<hr>
+<p>To enable the splash screen image you have to uncomment item tag in the folder called drawable. It’s sets the same image that you have on app icon. Conveniently isn’t it?</p>
+<hr>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- Modify this file to customize your launch splash screen --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">layer-list</span> <span class="attr">xmlns:android</span>=<span class="string">"http://schemas.android.com/apk/res/android"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">item</span> <span class="attr">android:drawable</span>=<span class="string">"@color/lightGreen"</span> /&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">&lt;!-- You can insert your own image assets here --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">item</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">bitmap</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:gravity</span>=<span class="string">"center"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:src</span>=<span class="string">"@mipmap/ic_launcher"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">item</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">layer-list</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<h2 id="Referencing-actions-in-your-workflow"><a href="#Referencing-actions-in-your-workflow" class="headerlink" title="Referencing actions in your workflow"></a>Referencing actions in your workflow</h2><p>Workflows can use actions defined in:</p>
-<p>- A public repository<br>- The same repository where your workflow file references the actions<br>- A published Docker container image on Docker Hub</p>
-<p>If an action is defined in the same repository where your workflow file uses the action, you can reference the action with either the ‌<code>{owner}/{repo}@{ref}</code> or <code>./path/to/dir</code> syntax in your workflow file.</p>
-<p>If an action is defined in a published Docker container image on Docker Hub, you must reference the action with the <code>docker://{image}:{tag}</code> syntax in your workflow file. To protect your code and data, we strongly recommend you verify the integrity of the Docker container image from Docker Hub before using it in your workflow.</p>
-<h2 id="Filtering-for-specific-branches-tags-and-paths"><a href="#Filtering-for-specific-branches-tags-and-paths" class="headerlink" title="Filtering for specific branches, tags, and paths"></a>Filtering for specific branches, tags, and paths</h2><p>You can set up your workflow to run only on certain branches. For example, this workflow runs when a push that includes files in the test directory is made on the master branch, or pushes to the v1 tag.</p>
-<figure class="highlight yml"><figcaption><span>on:</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">push:</span></span><br><span class="line"><span class="attr">  branches:</span></span><br><span class="line"><span class="bullet">    -</span> <span class="string">master</span></span><br><span class="line"><span class="attr">  tags:</span></span><br><span class="line"><span class="bullet">    -</span> <span class="string">v1</span></span><br><span class="line">  <span class="comment"># file paths to consider in the event. Optional; defaults to all.</span></span><br><span class="line"><span class="attr">  paths:</span></span><br><span class="line"><span class="bullet">    -</span> <span class="string">'test/*'</span></span><br></pre></td></tr></table></figure>
+<hr>
+<h3 id="For-iOS"><a href="#For-iOS" class="headerlink" title="For iOS"></a>For iOS</h3><p>Navigate to: ios =&gt; Runner =&gt; Assets.xcassets =&gt; LaunchImage.imageset</p>
+<p><img src="/blog/css/images/iosPath.png" alt="Path to iOS"></p>
+<p>There you can see three images with different scale size, replace them with your images and that’s all.</p>
+<p><img src="/blog/css/images/iosImages.png" alt="Change this files"></p>
+<p>I case you want to change those files names you have to do it in contents.json file in the same folder.</p>
+<hr>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">"images"</span> : [</span><br><span class="line">    &#123;</span><br><span class="line">      <span class="attr">"idiom"</span> : <span class="string">"universal"</span>,</span><br><span class="line">      <span class="attr">"filename"</span> : <span class="string">"LaunchImage.png"</span>,</span><br><span class="line">      <span class="attr">"scale"</span> : <span class="string">"1x"</span></span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">      <span class="attr">"idiom"</span> : <span class="string">"universal"</span>,</span><br><span class="line">      <span class="attr">"filename"</span> : <span class="string">"LaunchImage@2x.png"</span>,</span><br><span class="line">      <span class="attr">"scale"</span> : <span class="string">"2x"</span></span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">      <span class="attr">"idiom"</span> : <span class="string">"universal"</span>,</span><br><span class="line">      <span class="attr">"filename"</span> : <span class="string">"LaunchImage@3x.png"</span>,</span><br><span class="line">      <span class="attr">"scale"</span> : <span class="string">"3x"</span></span><br><span class="line">    &#125;</span><br><span class="line">  ],</span><br><span class="line">  <span class="attr">"info"</span> : &#123;</span><br><span class="line">    <span class="attr">"version"</span> : <span class="number">1</span>,</span><br><span class="line">    <span class="attr">"author"</span> : <span class="string">"xcode"</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>Also you can <a href="https://help.github.com/en/articles/managing-a-workflow-run" target="_blank" rel="noopener">follow the status and detailed logs</a> of your continuous integration workflow run on GitHub and <a href="https://help.github.com/en/articles/choosing-the-delivery-method-for-your-notifications#choosing-the-delivery-method-for-your-notifications-about-github-actions" target="_blank" rel="noopener">receive customized notifications</a>.</p>
-<h2 id="Live-logs-show-you-real-time-feedback"><a href="#Live-logs-show-you-real-time-feedback" class="headerlink" title="Live logs show you real-time feedback"></a>Live logs show you real-time feedback</h2><p>Live logs provide rich feedback into the progress of your builds as they run. GitHub streams your logs to the Actions console to show your status in real time. </p>
-<p>And you can deep-link to any line in any log file with a clean and simple permalink, making it easy for you to discuss a build failure or test result with a friend.<br><img src="/blog/css/images/ci_logs.png" alt="CI logs"></p>
-<p><strong>You can see more <a href="https://github.com/features/actions" target="_blank" rel="noopener">information</a> with examples.</strong></p>
+<hr>
 
         </div>
     </div>
@@ -270,10 +271,20 @@
         
     <nav id="article-nav">
         
+            <a href="/blog/2019/10/08/CI_CD_in_git/" id="article-nav-newer" class="article-nav-link-wrap">
+                <strong class="article-nav-caption">newer</strong>
+                <p class="article-nav-title">
+                    
+                        CI/CD with GiHub Actions
+                    
+                </p>
+                <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
+            </a>
         
-            <a href="/blog/2019/10/10/arduino_flutter/" id="article-nav-older" class="article-nav-link-wrap">
+        
+            <a href="/blog/2018/09/26/CSS-Grid-Layout/" id="article-nav-older" class="article-nav-link-wrap">
                 <strong class="article-nav-caption">older</strong>
-                <p class="article-nav-title">Arduino with Flutter</p>
+                <p class="article-nav-title">CSS Grid Layout short instruction</p>
                 <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
             </a>
         
@@ -296,27 +307,7 @@
                     <li>
                         
                         <div class="item-thumbnail">
-                            <a href="/blog/2019/10/10/CI_CD_in_git/" aria-label="thumbnail" class="thumbnail">
-        
-        
-                <span style="background-image:url(/blog/css/images/git.png)" alt="CI/CD with GiHub Actions" class="thumbnail-image"></span>
-        
-        
-</a>
-
-                        </div>
-                        
-                        <div class="item-inner">
-                            <p class="item-category"></p>
-                            <p class="item-title"><a href="/blog/2019/10/10/CI_CD_in_git/" class="title">CI/CD with GiHub Actions</a></p>
-                            <p class="item-date"><time datetime="2019-10-10T12:29:08.587Z" itemprop="datePublished">2019-10-10</time></p>
-                        </div>
-                    </li>
-                
-                    <li>
-                        
-                        <div class="item-thumbnail">
-                            <a href="/blog/2019/10/10/arduino_flutter/" aria-label="thumbnail" class="thumbnail">
+                            <a href="/blog/2019/10/09/arduino_flutter/" aria-label="thumbnail" class="thumbnail">
         
         
                 <span style="background-image:url(/blog/css/images/arduino_logo.png)" alt="Arduino with Flutter" class="thumbnail-image"></span>
@@ -328,15 +319,35 @@
                         
                         <div class="item-inner">
                             <p class="item-category"></p>
-                            <p class="item-title"><a href="/blog/2019/10/10/arduino_flutter/" class="title">Arduino with Flutter</a></p>
-                            <p class="item-date"><time datetime="2019-10-10T12:29:02.840Z" itemprop="datePublished">2019-10-10</time></p>
+                            <p class="item-title"><a href="/blog/2019/10/09/arduino_flutter/" class="title">Arduino with Flutter</a></p>
+                            <p class="item-date"><time datetime="2019-10-09T14:00:00.000Z" itemprop="datePublished">2019-10-09</time></p>
                         </div>
                     </li>
                 
                     <li>
                         
                         <div class="item-thumbnail">
-                            <a href="/blog/2019/10/10/Splash-screen-creation/" aria-label="thumbnail" class="thumbnail">
+                            <a href="/blog/2019/10/08/CI_CD_in_git/" aria-label="thumbnail" class="thumbnail">
+        
+        
+                <span style="background-image:url(/blog/css/images/git.png)" alt="CI/CD with GiHub Actions" class="thumbnail-image"></span>
+        
+        
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/blog/2019/10/08/CI_CD_in_git/" class="title">CI/CD with GiHub Actions</a></p>
+                            <p class="item-date"><time datetime="2019-10-08T11:00:00.000Z" itemprop="datePublished">2019-10-08</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/blog/2018/10/05/Splash-screen-creation/" aria-label="thumbnail" class="thumbnail">
         
         
                 <span style="background-image:url(/blog/css/images/splash-screen-example.jpg)" alt="How to make splash screen for Android and iOS on flutter" class="thumbnail-image"></span>
@@ -348,8 +359,8 @@
                         
                         <div class="item-inner">
                             <p class="item-category"></p>
-                            <p class="item-title"><a href="/blog/2019/10/10/Splash-screen-creation/" class="title">How to make splash screen for Android and iOS on flutter</a></p>
-                            <p class="item-date"><time datetime="2019-10-10T12:29:02.840Z" itemprop="datePublished">2019-10-10</time></p>
+                            <p class="item-title"><a href="/blog/2018/10/05/Splash-screen-creation/" class="title">How to make splash screen for Android and iOS on flutter</a></p>
+                            <p class="item-date"><time datetime="2018-10-05T09:00:00.000Z" itemprop="datePublished">2018-10-05</time></p>
                         </div>
                     </li>
                 
@@ -385,7 +396,7 @@
     <div class="widget-wrap widget-list">
         <h3 class="widget-title">archives</h3>
         <div class="widget">
-            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2019/10/">October 2019</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2018/09/">September 2018</a><span class="archive-list-count">1</span></li></ul>
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2019/10/">October 2019</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2018/10/">October 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2018/09/">September 2018</a><span class="archive-list-count">1</span></li></ul>
         </div>
     </div>
 
@@ -547,7 +558,7 @@
     var disqus_shortname = 'hexo-theme-hueman';
     
     
-    var disqus_url = 'http://yoursite.com/2019/10/10/CI_CD_in_git/';
+    var disqus_url = 'http://yoursite.com/2018/10/05/Splash-screen-creation/';
     
     (function() {
     var dsq = document.createElement('script');
