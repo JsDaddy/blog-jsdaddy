@@ -1,31 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
 
     
 
     
-    <title>How to make splash screen for Android and iOS on flutter | JSDaddy blog - we share our knowledge</title>
+    <title>Arduino with Flutter | JSDaddy blog - we share our knowledge</title>
     
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=6">
     
-    <meta name="keywords" content="FLUTTER">
+    <meta name="keywords" content="Development,FLUTTER,Arduino">
     
-    <meta name="description" content="In this article we will look how to make it in few ways, which way to choose is up to you.  Connect the flutter package. There are a lot of packages on https://pub.dartlang.org to help you in the most">
-<meta name="keywords" content="FLUTTER">
+    <meta name="Description" content="JSDaddy blog">
+    <meta name="description" content="If you need to connect Arduino with your Android phone by USB, you need an OTG and usb_serial. Flutter SideInstall usb_serial package First you need variable ports to keep connection  1UsbPort _port;">
+<meta name="keywords" content="Development,FLUTTER,Arduino">
 <meta property="og:type" content="article">
-<meta property="og:title" content="How to make splash screen for Android and iOS on flutter">
-<meta property="og:url" content="http://yoursite.com/2019/10/09/Splash-screen-creation/index.html">
+<meta property="og:title" content="Arduino with Flutter">
+<meta property="og:url" content="http://yoursite.com/2019/10/10/arduino_flutter/index.html">
 <meta property="og:site_name" content="JSDaddy blog - we share our knowledge">
-<meta property="og:description" content="In this article we will look how to make it in few ways, which way to choose is up to you.  Connect the flutter package. There are a lot of packages on https://pub.dartlang.org to help you in the most">
+<meta property="og:description" content="If you need to connect Arduino with your Android phone by USB, you need an OTG and usb_serial. Flutter SideInstall usb_serial package First you need variable ports to keep connection  1UsbPort _port;">
 <meta property="og:locale" content="default">
-<meta property="og:image" content="http://yoursite.com/blog/css/images/splash-screen-example.jpg">
-<meta property="og:updated_time" content="2019-10-09T15:08:48.891Z">
+<meta property="og:image" content="http://yoursite.com/blog/css/images/arduino_logo.png">
+<meta property="og:updated_time" content="2019-10-10T12:29:02.841Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="How to make splash screen for Android and iOS on flutter">
-<meta name="twitter:description" content="In this article we will look how to make it in few ways, which way to choose is up to you.  Connect the flutter package. There are a lot of packages on https://pub.dartlang.org to help you in the most">
-<meta name="twitter:image" content="http://yoursite.com/blog/css/images/splash-screen-example.jpg">
+<meta name="twitter:title" content="Arduino with Flutter">
+<meta name="twitter:description" content="If you need to connect Arduino with your Android phone by USB, you need an OTG and usb_serial. Flutter SideInstall usb_serial package First you need variable ports to keep connection  1UsbPort _port;">
+<meta name="twitter:image" content="http://yoursite.com/blog/css/images/arduino_logo.png">
     
     <base href="/">
     
@@ -41,7 +42,7 @@
     <link rel="stylesheet" href="/blog/css/style.css">
     <link rel="stylesheet" href="/blog/css/main.min.css">
 
-    <script src="/blog/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/blog/libs/jquery/3.4.1/jquery.min.js"></script>
     
     
         <link rel="stylesheet" href="/blog/libs/lightgallery/css/lightgallery.min.css">
@@ -119,14 +120,14 @@
                     <section id="main">
                         
                         <div class="main-body-content">
-                            <article id="post-Splash-screen-creation" class="article article-single article-type-post" itemscope itemprop="blogPost">
+                            <article id="post-arduino_flutter" class="article article-single article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
             <header class="article-header">
                 
     
         <h1 class="article-title" itemprop="name">
-            How to make splash screen for Android and iOS on flutter
+            Arduino with Flutter
         </h1>
     
 
@@ -137,8 +138,8 @@
             <div class="article-meta">
                 
     <div class="article-date">
-        <a href="/blog/2019/10/09/Splash-screen-creation/" class="article-date">
-            <time datetime="2019-10-09T15:08:48.890Z" itemprop="datePublished">2019-10-09</time>
+        <a href="/blog/2019/10/10/arduino_flutter/" class="article-date">
+            <time datetime="2019-10-10T12:29:02.840Z" itemprop="datePublished">2019-10-10</time>
         </a>
     </div>
 
@@ -147,7 +148,7 @@
                 
     <div class="article-tag">
         <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/blog/tags/FLUTTER/">FLUTTER</a>
+        <a class="tag-link" href="/blog/tags/Arduino/">Arduino</a>, <a class="tag-link" href="/blog/tags/Development/">Development</a>, <a class="tag-link" href="/blog/tags/FLUTTER/">FLUTTER</a>
     </div>
 
             </div>
@@ -155,42 +156,27 @@
         
 
         <div class="article-entry" itemprop="articleBody">
-            <p>In this article we will look how to make it in few ways, which way to choose is up to you.</p>
-<p><img src="/blog/css/images/splash-screen-example.jpg" alt="splash screen example"></p>
-<h2 id="Connect-the-flutter-package"><a href="#Connect-the-flutter-package" class="headerlink" title="Connect the flutter package."></a>Connect the flutter package.</h2><p> There are a lot of packages on <a href="https://pub.dartlang.org" target="_blank" rel="noopener">https://pub.dartlang.org</a> to help you in the most of cases and this case isn’t exception.<br>Just be sure to choose the package which have scored more than 90 points.<br>This will ensure you that you choose the most up-to-date and less prone to errors package.<br>For this case <a href="https://pub.dartlang.org/packages/splashscreen#-analysis-tab-" target="_blank" rel="noopener">https://pub.dartlang.org/packages/splashscreen#-analysis-tab-</a> will do just fine.<br>It has sufficient amount of settings to provide you control of your splash screen.</p>
-<hr>
-<pre><code>To use the package you have to add the dependency to your pubspec.yaml file</code></pre><figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">dependencies:</span><br><span class="line">    flutter:</span><br><span class="line">        sdk: flutter</span><br><span class="line">    splashscreen:</span><br></pre></td></tr></table></figure>
+            <p><img src="/blog/css/images/arduino_logo.png" alt></p>
+<p>If you need to connect Arduino with your Android phone by USB, you need an OTG and <a href="https://pub.dev/packages/usb_serial" target="_blank" rel="noopener">usb_serial</a>.</p>
+<h2 id="Flutter-Side"><a href="#Flutter-Side" class="headerlink" title="Flutter Side"></a>Flutter Side</h2><p>Install <a href="https://pub.dev/packages/usb_serial" target="_blank" rel="noopener">usb_serial</a> package</p>
+<p>First you need variable ports to keep connection </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">UsbPort _port;</span><br></pre></td></tr></table></figure>
 
-<hr>
-<hr>
-<pre><code>Here is the example which is given us by the documentation:</code></pre><figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">new</span> SplashScreen(</span><br><span class="line">  seconds: <span class="number">14</span>,</span><br><span class="line">  navigateAfterSeconds: <span class="keyword">new</span> AfterSplash(),</span><br><span class="line">  title: <span class="keyword">new</span> Text(<span class="string">'Welcome In SplashScreen'</span>),</span><br><span class="line">  image: <span class="keyword">new</span> Image.asset(<span class="string">'screenshot.png'</span>),</span><br><span class="line">  backgroundColor: Colors.white,</span><br><span class="line">  styleTextUnderTheLoader: <span class="keyword">new</span> TextStyle(),</span><br><span class="line">  photoSize: <span class="number">100.0</span>,</span><br><span class="line">  loaderColor: Colors.red</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
+<p>Here we connect to the specific device</p>
+<figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">Future&lt;<span class="built_in">bool</span>&gt; _connectTo(device) <span class="keyword">async</span> &#123;</span><br><span class="line">  <span class="keyword">if</span> (_port != <span class="keyword">null</span>) &#123;</span><br><span class="line">    _port.close();</span><br><span class="line">    _port = <span class="keyword">null</span>;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  _port = <span class="keyword">await</span> device.create();</span><br><span class="line">  <span class="keyword">if</span> (!<span class="keyword">await</span> _port.open()) &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">await</span> _port.setDTR(<span class="keyword">true</span>);</span><br><span class="line">  <span class="keyword">await</span> _port.setRTS(<span class="keyword">true</span>);</span><br><span class="line">  <span class="keyword">await</span> _port.setPortParameters(</span><br><span class="line">      <span class="number">9600</span>, UsbPort.DATABITS_8,</span><br><span class="line">      UsbPort.STOPBITS_1, </span><br><span class="line">      UsbPort.PARITY_NONE);</span><br><span class="line">  <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<hr>
-<p>In the end you will see something like this:</p>
-<p><img src="/blog/css/images/packageExample.png" alt="splash screen example"></p>
-<h2 id="Change-files-in-the-appropriate-folder"><a href="#Change-files-in-the-appropriate-folder" class="headerlink" title="Change files in the appropriate folder"></a>Change files in the appropriate folder</h2><h3 id="For-Android"><a href="#For-Android" class="headerlink" title="For Android"></a>For Android</h3><p>Navigate to:  android =&gt; app =&gt; src =&gt; main =&gt; res</p>
-<p><img src="/blog/css/images/androidPath.png" alt="Path to Android"></p>
-<p>Here we seen folders with xml files and png images with different size.</p>
-<p><img src="/blog/css/images/androidFiles.png" alt="Android files"></p>
-<p>Splash screen is active by the default but it has no image and background color is white so it makes no difference whether it is enabled or disabled. To change background color you have to create new file with xml extension in the values folder and define color and his alias. </p>
-<hr>
-<pre><code>Like this:</code></pre><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">resources</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">color</span> <span class="attr">name</span>=<span class="string">"lightGreen"</span>&gt;</span>#2ECC71<span class="tag">&lt;/<span class="name">color</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">resources</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><strong>Important first argument of <code>setPortParameters</code> must be the same on Flutter Side and Arduino Side</strong></p>
+<p>Here we are getting list of devices and connecting only first device </p>
+<figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">void</span> _getPorts() <span class="keyword">async</span> &#123;</span><br><span class="line">   _ports = [];</span><br><span class="line">   <span class="built_in">List</span>&lt;UsbDevice&gt; devices = <span class="keyword">await</span> UsbSerial.listDevices();</span><br><span class="line">   <span class="keyword">await</span> _connectTo(devices.isEmpty ? <span class="keyword">null</span> : devices[<span class="number">0</span>]);</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
 
-<hr>
-<p>To enable the splash screen image you have to uncomment item tag in the folder called drawable. It’s sets the same image that you have on app icon. Conveniently isn’t it?</p>
-<hr>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- Modify this file to customize your launch splash screen --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">layer-list</span> <span class="attr">xmlns:android</span>=<span class="string">"http://schemas.android.com/apk/res/android"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">item</span> <span class="attr">android:drawable</span>=<span class="string">"@color/lightGreen"</span> /&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">&lt;!-- You can insert your own image assets here --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">item</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">bitmap</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:gravity</span>=<span class="string">"center"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:src</span>=<span class="string">"@mipmap/ic_launcher"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">item</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">layer-list</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>On init state initialize listener for incoming events and fire <code>_getPorts</code> function</p>
+<figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@override</span></span><br><span class="line">    <span class="keyword">void</span> initState() &#123;</span><br><span class="line">      UsbSerial.usbEventStream.listen((UsbEvent event) &#123;</span><br><span class="line">        _getPorts();</span><br><span class="line">      &#125;);</span><br><span class="line">      _getPorts();</span><br><span class="line">      <span class="keyword">super</span>.initState();</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
 
-<hr>
-<h3 id="For-iOS"><a href="#For-iOS" class="headerlink" title="For iOS"></a>For iOS</h3><p>Navigate to: ios =&gt; Runner =&gt; Assets.xcassets =&gt; LaunchImage.imageset</p>
-<p><img src="/blog/css/images/iosPath.png" alt="Path to iOS"></p>
-<p>There you can see three images with different scale size, replace them with your images and that’s all.</p>
-<p><img src="/blog/css/images/iosImages.png" alt="Change this files"></p>
-<p>I case you want to change those files names you have to do it in contents.json file in the same folder.</p>
-<hr>
-<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">"images"</span> : [</span><br><span class="line">    &#123;</span><br><span class="line">      <span class="attr">"idiom"</span> : <span class="string">"universal"</span>,</span><br><span class="line">      <span class="attr">"filename"</span> : <span class="string">"LaunchImage.png"</span>,</span><br><span class="line">      <span class="attr">"scale"</span> : <span class="string">"1x"</span></span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">      <span class="attr">"idiom"</span> : <span class="string">"universal"</span>,</span><br><span class="line">      <span class="attr">"filename"</span> : <span class="string">"LaunchImage@2x.png"</span>,</span><br><span class="line">      <span class="attr">"scale"</span> : <span class="string">"2x"</span></span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">      <span class="attr">"idiom"</span> : <span class="string">"universal"</span>,</span><br><span class="line">      <span class="attr">"filename"</span> : <span class="string">"LaunchImage@3x.png"</span>,</span><br><span class="line">      <span class="attr">"scale"</span> : <span class="string">"3x"</span></span><br><span class="line">    &#125;</span><br><span class="line">  ],</span><br><span class="line">  <span class="attr">"info"</span> : &#123;</span><br><span class="line">    <span class="attr">"version"</span> : <span class="number">1</span>,</span><br><span class="line">    <span class="attr">"author"</span> : <span class="string">"xcode"</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>And last we need function that will send message to Arduino</p>
+<figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">void</span> sendMsg(<span class="built_in">String</span> message) <span class="keyword">async</span> &#123;</span><br><span class="line">  <span class="keyword">await</span> _port.write(Uint8List.fromList(msg.codeUnits));</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
 
-<hr>
+<h2 id="Arduino-Side"><a href="#Arduino-Side" class="headerlink" title="Arduino Side"></a>Arduino Side</h2><p>All you need here it is <a href="https://www.arduino.cc/en/Main/software" target="_blank" rel="noopener">arduino web IDE</a></p>
+<p><img src="/blog/css/images/arduino-side.png" alt></p>
 
         </div>
     </div>
@@ -270,20 +256,20 @@
         
     <nav id="article-nav">
         
-            <a href="/blog/2019/10/09/arduino_flutter/" id="article-nav-newer" class="article-nav-link-wrap">
+            <a href="/blog/2019/10/10/CI_CD_in_git/" id="article-nav-newer" class="article-nav-link-wrap">
                 <strong class="article-nav-caption">newer</strong>
                 <p class="article-nav-title">
                     
-                        Arduino with Flutter
+                        CI/CD with GiHub Actions
                     
                 </p>
                 <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
             </a>
         
         
-            <a href="/blog/2019/10/09/CI_CD_in_git/" id="article-nav-older" class="article-nav-link-wrap">
+            <a href="/blog/2019/10/10/Splash-screen-creation/" id="article-nav-older" class="article-nav-link-wrap">
                 <strong class="article-nav-caption">older</strong>
-                <p class="article-nav-title">CI/CD with GiHub Actions</p>
+                <p class="article-nav-title">How to make splash screen for Android and iOS on flutter</p>
                 <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
             </a>
         
@@ -306,47 +292,7 @@
                     <li>
                         
                         <div class="item-thumbnail">
-                            <a href="/blog/2019/10/09/arduino_flutter/" class="thumbnail">
-        
-        
-                <span style="background-image:url(/blog/css/images/arduino_logo.png)" alt="Arduino with Flutter" class="thumbnail-image"></span>
-        
-        
-</a>
-
-                        </div>
-                        
-                        <div class="item-inner">
-                            <p class="item-category"></p>
-                            <p class="item-title"><a href="/blog/2019/10/09/arduino_flutter/" class="title">Arduino with Flutter</a></p>
-                            <p class="item-date"><time datetime="2019-10-09T15:08:48.891Z" itemprop="datePublished">2019-10-09</time></p>
-                        </div>
-                    </li>
-                
-                    <li>
-                        
-                        <div class="item-thumbnail">
-                            <a href="/blog/2019/10/09/Splash-screen-creation/" class="thumbnail">
-        
-        
-                <span style="background-image:url(/blog/css/images/splash-screen-example.jpg)" alt="How to make splash screen for Android and iOS on flutter" class="thumbnail-image"></span>
-        
-        
-</a>
-
-                        </div>
-                        
-                        <div class="item-inner">
-                            <p class="item-category"></p>
-                            <p class="item-title"><a href="/blog/2019/10/09/Splash-screen-creation/" class="title">How to make splash screen for Android and iOS on flutter</a></p>
-                            <p class="item-date"><time datetime="2019-10-09T15:08:48.890Z" itemprop="datePublished">2019-10-09</time></p>
-                        </div>
-                    </li>
-                
-                    <li>
-                        
-                        <div class="item-thumbnail">
-                            <a href="/blog/2019/10/09/CI_CD_in_git/" class="thumbnail">
+                            <a href="/blog/2019/10/10/CI_CD_in_git/" aria-label="thumbnail" class="thumbnail">
         
         
                 <span style="background-image:url(/blog/css/images/git.png)" alt="CI/CD with GiHub Actions" class="thumbnail-image"></span>
@@ -358,15 +304,55 @@
                         
                         <div class="item-inner">
                             <p class="item-category"></p>
-                            <p class="item-title"><a href="/blog/2019/10/09/CI_CD_in_git/" class="title">CI/CD with GiHub Actions</a></p>
-                            <p class="item-date"><time datetime="2019-10-09T15:08:48.889Z" itemprop="datePublished">2019-10-09</time></p>
+                            <p class="item-title"><a href="/blog/2019/10/10/CI_CD_in_git/" class="title">CI/CD with GiHub Actions</a></p>
+                            <p class="item-date"><time datetime="2019-10-10T12:29:08.587Z" itemprop="datePublished">2019-10-10</time></p>
                         </div>
                     </li>
                 
                     <li>
                         
                         <div class="item-thumbnail">
-                            <a href="/blog/2018/09/26/CSS-Grid-Layout/" class="thumbnail">
+                            <a href="/blog/2019/10/10/arduino_flutter/" aria-label="thumbnail" class="thumbnail">
+        
+        
+                <span style="background-image:url(/blog/css/images/arduino_logo.png)" alt="Arduino with Flutter" class="thumbnail-image"></span>
+        
+        
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/blog/2019/10/10/arduino_flutter/" class="title">Arduino with Flutter</a></p>
+                            <p class="item-date"><time datetime="2019-10-10T12:29:02.840Z" itemprop="datePublished">2019-10-10</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/blog/2019/10/10/Splash-screen-creation/" aria-label="thumbnail" class="thumbnail">
+        
+        
+                <span style="background-image:url(/blog/css/images/splash-screen-example.jpg)" alt="How to make splash screen for Android and iOS on flutter" class="thumbnail-image"></span>
+        
+        
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/blog/2019/10/10/Splash-screen-creation/" class="title">How to make splash screen for Android and iOS on flutter</a></p>
+                            <p class="item-date"><time datetime="2019-10-10T12:29:02.840Z" itemprop="datePublished">2019-10-10</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/blog/2018/09/26/CSS-Grid-Layout/" aria-label="thumbnail" class="thumbnail">
         
         
                 <span style="background-image:url(/blog/css/images/grid-browser-support.png)" alt="CSS Grid Layout short instruction" class="thumbnail-image"></span>
@@ -405,7 +391,7 @@
     <div class="widget-wrap widget-list">
         <h3 class="widget-title">tags</h3>
         <div class="widget">
-            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/Arduino/">Arduino</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/CI-CD/">CI/CD</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/CSS/">CSS</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/DEVELOPMENT-PROCESS/">DEVELOPMENT PROCESS</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/Development/">Development</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/FLUTTER/">FLUTTER</a><span class="tag-list-count">2</span></li></ul>
+            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/Arduino/">Arduino</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/CI-CD/">CI/CD</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/CSS/">CSS</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/Development/">Development</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/FLUTTER/">FLUTTER</a><span class="tag-list-count">2</span></li></ul>
         </div>
     </div>
 
@@ -415,7 +401,7 @@
 <!--    <div class="widget-wrap widget-float">-->
 <!--        <h3 class="widget-title">etiqueta cloud</h3>-->
 <!--        <div class="widget tagcloud">-->
-<!--            <a href="/blog/tags/Arduino/" style="font-size: 10px;">Arduino</a> <a href="/blog/tags/CI-CD/" style="font-size: 10px;">CI/CD</a> <a href="/blog/tags/CSS/" style="font-size: 10px;">CSS</a> <a href="/blog/tags/DEVELOPMENT-PROCESS/" style="font-size: 10px;">DEVELOPMENT PROCESS</a> <a href="/blog/tags/Development/" style="font-size: 10px;">Development</a> <a href="/blog/tags/FLUTTER/" style="font-size: 20px;">FLUTTER</a>-->
+<!--            <a href="/blog/tags/Arduino/" style="font-size: 10px;">Arduino</a> <a href="/blog/tags/CI-CD/" style="font-size: 10px;">CI/CD</a> <a href="/blog/tags/CSS/" style="font-size: 10px;">CSS</a> <a href="/blog/tags/Development/" style="font-size: 20px;">Development</a> <a href="/blog/tags/FLUTTER/" style="font-size: 20px;">FLUTTER</a>-->
 <!--        </div>-->
 <!--    </div>-->
 <!---->
@@ -498,12 +484,12 @@
 <!--                            </a>-->
 <!--                        </li>-->
                         <li>
-                            <a class="linkedin" href="https://www.linkedin.com/company/jsdaddy/">
+                            <a class="linkedin" aria-label="linkedin" href="https://www.linkedin.com/company/jsdaddy/">
                                 <i class="fa fa-linkedin"></i>
                             </a>
                         </li>
                         <li>
-                            <a class="github" href="https://github.com/JsDaddy">
+                            <a class="github" aria-label="github" href="https://github.com/JsDaddy">
                                 <i class="fa fa-github"></i>
                             </a>
                         </li>
@@ -557,7 +543,7 @@
     var disqus_shortname = 'hexo-theme-hueman';
     
     
-    var disqus_url = 'http://yoursite.com/2019/10/09/Splash-screen-creation/';
+    var disqus_url = 'http://yoursite.com/2019/10/10/arduino_flutter/';
     
     (function() {
     var dsq = document.createElement('script');
