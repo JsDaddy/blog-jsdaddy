@@ -3,6 +3,7 @@ title: CI/CD with GiHub Actions
 tags:
   - CI/CD
   - Development
+date: 2019-10-08 14:00:00
 ---
 ![](/blog/css/images/git.png)
 

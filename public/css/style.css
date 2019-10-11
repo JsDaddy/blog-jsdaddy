@@ -1,5 +1,4 @@
 .article-meta,
-.archive-year,
 #main .main-body-header em,
 #main .main-body-header a {
   text-transform: uppercase;
@@ -8,11 +7,9 @@
   text-shadow: 0 1px #fff;
 }
 .article-meta,
-.archive-year,
 #main .main-body-header em,
 #main .main-body-header a,
 .article-meta a,
-.archive-year a,
 #main .main-body-header em a,
 #main .main-body-header a a {
   text-decoration: none;
@@ -235,7 +232,7 @@ header .nav-wrapper nav ul li a {
   text-shadow: 0 1px rgba(0,0,0,0.2);
 }
 .blog-banner {
-  background: url("http://bytlogic.com/wp-content/uploads/2016/08/development_bg_header.jpg") no-repeat center center;
+  background: url("https://bytlogic.com/wp-content/uploads/2016/08/development_bg_header.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -1359,132 +1356,6 @@ a.article-title:hover {
 #comments a {
   color: #006bde;
 }
-.archives-wrap {
-  margin: block-margin 0;
-}
-.archives:before,
-.archives:after {
-  content: "";
-  display: table;
-}
-.archives:after {
-  clear: both;
-}
-.archive-year-wrap {
-  padding: 18px 30px 17px;
-  font-size: 16px;
-  color: #666;
-  border-bottom: 1px solid #eee;
-}
-.archive-year i {
-  margin-right: 8px;
-}
-.archives {
-  -webkit-column-gap: 10px;
-  -moz-column-gap: 10px;
-  column-gap: 10px;
-}
-@media mq-tablet {
-  .archives {
-    -webkit-column-count: 2;
-    -moz-column-count: 2;
-    column-count: 2;
-  }
-}
-@media mq-normal {
-  .archives {
-    -webkit-column-count: 3;
-    -moz-column-count: 3;
-    column-count: 3;
-  }
-}
-.archive-article-inner {
-  padding: 10px;
-  margin-bottom: 15px;
-}
-.archive-article-title {
-  text-decoration: none;
-  font-weight: bold;
-  color: #555;
-  -webkit-transition: color 0.2s;
-  -moz-transition: color 0.2s;
-  -ms-transition: color 0.2s;
-  transition: color 0.2s;
-  line-height: 1.6em;
-}
-.archive-article-title:hover {
-  color: #006bde;
-}
-.archive-article-footer {
-  margin-top: 1em;
-}
-.archive-article-date {
-  color: #aaa;
-  text-decoration: none;
-  font-size: 0.85em;
-  line-height: 1em;
-  margin-bottom: 0.5em;
-  display: block;
-}
-#page-nav {
-  float: left;
-  width: 100%;
-  display: block;
-  margin: 30px 0px 45px 0px;
-  text-align: center;
-  color: #aaa;
-}
-#page-nav:before,
-#page-nav:after {
-  content: "";
-  display: table;
-}
-#page-nav:after {
-  clear: both;
-}
-#page-nav .pages {
-  display: block;
-  font-size: 17px;
-  font-weight: 300;
-  margin-bottom: 1em !important;
-  border: none !important;
-}
-#page-nav .pages:before {
-  content: "\f15c";
-  font-family: FontAwesome;
-  margin-right: 6px;
-}
-#page-nav .page-number,
-#page-nav .extend {
-  color: #006bde;
-  position: relative;
-  overflow: hidden;
-  font-size: 16px;
-  padding: 7px 8px;
-  display: inline;
-  margin: 0 2px;
-  text-decoration: none;
-  border-bottom: 3px solid #ddd;
-  border-top: 1px solid #f1f1f1;
-  font-weight: 600;
-  -webkit-transition: 0.2s ease-in;
-  -moz-transition: 0.2s ease-in;
-  -ms-transition: 0.2s ease-in;
-  transition: 0.2s ease-in;
-}
-#page-nav .page-number:hover,
-#page-nav .extend:hover,
-#page-nav .page-number:active,
-#page-nav .extend:active,
-#page-nav .page-number.current,
-#page-nav .extend.current {
-  color: #444;
-  border-bottom: 3px solid #006bde;
-  border-top: 1px solid #f1f1f1;
-}
-#page-nav .space {
-  color: #ddd;
-}
 #footer {
   background: #fff !important;
   margin-top: 60px;
@@ -1541,143 +1412,6 @@ i.icon:before {
   -moz-transition: 0.2s ease-in;
   -ms-transition: 0.2s ease-in;
   transition: 0.2s ease-in;
-}
-.ins-search {
-  display: none;
-}
-.ins-search.show {
-  display: block;
-}
-.ins-selectable {
-  cursor: pointer;
-}
-.ins-search-mask,
-.ins-search-container {
-  position: fixed;
-}
-.ins-search-mask {
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 100;
-  background: rgba(0,0,0,0.5);
-}
-.ins-input-wrapper {
-  position: relative;
-}
-.ins-search-input {
-  width: 100%;
-  border: none;
-  outline: none;
-  font-size: 16px;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  font-weight: 200;
-  border-radius: 0;
-  background: #fff;
-  line-height: 20px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: 12px 28px 12px 20px;
-  border-bottom: 1px solid #e2e2e2;
-  font-family: "Microsoft Yahei Light", "Microsoft Yahei", Helvetica, Arial, sans-serif;
-}
-.ins-close {
-  top: 50%;
-  right: 6px;
-  width: 20px;
-  height: 20px;
-  font-size: 16px;
-  margin-top: -11px;
-  position: absolute;
-  text-align: center;
-  display: inline-block;
-}
-.ins-close:hover {
-  color: #006bde;
-}
-.ins-search-container {
-  left: 50%;
-  top: 100px;
-  z-index: 101;
-  bottom: 100px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 540px;
-  margin-left: -270px;
-}
-@media screen and (max-width: 559px), screen and (max-height: 479px) {
-  .ins-search-container {
-    top: 0;
-    left: 0;
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    background: #f7f7f7;
-  }
-}
-.ins-section-wrapper {
-  left: 0;
-  right: 0;
-  top: 45px;
-  bottom: 0;
-  overflow-y: auto;
-  position: absolute;
-}
-.ins-section-container {
-  position: relative;
-  background: #f7f7f7;
-}
-.ins-section {
-  font-size: 14px;
-  line-height: 16px;
-}
-.ins-section .ins-section-header,
-.ins-section .ins-search-item {
-  padding: 8px 15px;
-}
-.ins-section .ins-section-header {
-  color: #9a9a9a;
-  border-bottom: 1px solid #e2e2e2;
-}
-.ins-section .ins-slug {
-  margin-left: 5px;
-  color: #9a9a9a;
-}
-.ins-section .ins-slug:before {
-  content: '(';
-}
-.ins-section .ins-slug:after {
-  content: ')';
-}
-.ins-section .ins-search-item header,
-.ins-section .ins-search-item .ins-search-preview {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-.ins-section .ins-search-item header .fa {
-  margin-right: 8px;
-}
-.ins-section .ins-search-item .ins-search-preview {
-  height: 15px;
-  font-size: 12px;
-  color: #9a9a9a;
-  margin: 5px 0 0 20px;
-}
-.ins-section .ins-search-item:hover,
-.ins-section .ins-search-item.active {
-  color: #fff;
-  background: #006bde;
-}
-.ins-section .ins-search-item:hover .ins-slug,
-.ins-section .ins-search-item.active .ins-slug,
-.ins-section .ins-search-item:hover .ins-search-preview,
-.ins-section .ins-search-item.active .ins-search-preview {
-  color: #fff;
 }
 .highlight {
   margin: 0px;
