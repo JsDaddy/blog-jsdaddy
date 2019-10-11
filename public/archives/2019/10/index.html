@@ -6,7 +6,7 @@
     
 
     
-    <title>Archive: 2019/10 | JSDaddy blog - we share our knowledge</title>
+    <title>Arxiu: 2019/10 | JSDaddy blog - we share our knowledge</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=6">
     
@@ -48,6 +48,7 @@
     
 
 
+
 </head>
 </html>
 <body>
@@ -81,14 +82,14 @@
                             </li>
                         </ul>
                     </nav>
+                    <div class="btn-wrap">
+                        <a class="btn contact_us_btn" href="#popup-form">Contact Us</a>
+                    </div>
                     <h1>Visit our
                         <a href="https://github.com/JsDaddy" target="_blank" aria-label="github" rel="noopener">
                             <i class="fa fa-github"></i>
                         </a>
                     </h1>
-<!--                    <div class="btn-wrap">-->
-<!--                        <a class="btn contact_us_btn" href="#popup-form">Contact Us</a>-->
-<!--                    </div>-->
                 </div>
                 <div class="nav-burger">
                     <div class="line"></div>
@@ -108,6 +109,32 @@
     </div>
 </section>
 
+<form id="popup-form" class="popup-form mfp-hide white-popup-block">
+    <h3>Contact Us</h3>
+    <div class="popup-form__input-wrapper">
+        <label for="name">Name</label><br>
+        <input id="name" name="name" type="text">
+        <p class="popup-form__input-wrapper_invalid-message" id="name_error">This field can not be empty</p>
+    </div>
+    <div class="popup-form__input-wrapper">
+        <label for="email">Email</label><br>
+        <input id="email" name="email" type="email">
+        <p class="popup-form__input-wrapper_invalid-message" id="email_error">This field must contain valid email</p>
+    </div>
+    <div class="popup-form__input-wrapper">
+        <label for="Textarea">Message</label><br>
+        <textarea id="message"></textarea>
+        <p class="popup-form__input-wrapper_invalid-message" id="textarea_error">This field can not be empty</p>
+    </div>
+    <div class="popup-form__btn-wrapper">
+        <button class="btn" id="form__submit">Contact Us</button>
+    </div>
+    <div class="success-message">
+        <div class="success-message__icon">
+            <i class="fa fa-check" aria-hidden="true"></i>
+        </div>
+        <span>Success!</span></div>
+</form>
         <div class="container">
             <div class="main-body container-inner">
                 <div class="main-body-inner">
@@ -236,7 +263,7 @@ GitHub Actions now makes it easier to automate how you build, test, and deploy y
                     <aside id="sidebar">
     <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
 <!--    <div class="sidebar-top">-->
-<!--        <p>suivre:</p>-->
+<!--        <p>follow:</p>-->
 <!--        <ul class="social-links">-->
 <!--            -->
 <!--                -->
@@ -298,7 +325,7 @@ GitHub Actions now makes it easier to automate how you build, test, and deploy y
             
                 
     <div class="widget-wrap">
-        <h3 class="widget-title">récents</h3>
+        <h3 class="widget-title">recents</h3>
         <div class="widget">
             <ul id="recent-post" class="">
                 
@@ -412,7 +439,7 @@ GitHub Actions now makes it easier to automate how you build, test, and deploy y
             
                 <!---->
 <!--    <div class="widget-wrap widget-float">-->
-<!--        <h3 class="widget-title">tag cloud</h3>-->
+<!--        <h3 class="widget-title">etiqueta cloud</h3>-->
 <!--        <div class="widget tagcloud">-->
 <!--            <a href="/blog/tags/Arduino/" style="font-size: 10px;">Arduino</a> <a href="/blog/tags/CI-CD/" style="font-size: 10px;">CI/CD</a> <a href="/blog/tags/CSS/" style="font-size: 10px;">CSS</a> <a href="/blog/tags/Development/" style="font-size: 20px;">Development</a> <a href="/blog/tags/FLUTTER/" style="font-size: 20px;">FLUTTER</a>-->
 <!--        </div>-->
@@ -422,7 +449,7 @@ GitHub Actions now makes it easier to automate how you build, test, and deploy y
             
                 <!---->
 <!--    <div class="widget-wrap widget-list">-->
-<!--        <h3 class="widget-title">liens</h3>-->
+<!--        <h3 class="widget-title">links</h3>-->
 <!--        <div class="widget">-->
 <!--            <ul>-->
 <!--                -->
@@ -522,34 +549,6 @@ GitHub Actions now makes it easier to automate how you build, test, and deploy y
     </div>
 </footer>
 
-
-<form id="popup-form" class="popup-form mfp-hide white-popup-block">
-    <h3>Contact Us</h3>
-    <div class="popup-form__input-wrapper">
-        <label for="name">Name</label><br>
-        <input id="name" name="name" type="text">
-        <p class="popup-form__input-wrapper_invalid-message" id="name_error">This field can not be empty</p>
-    </div>
-    <div class="popup-form__input-wrapper">
-        <label for="email">Email</label><br>
-        <input id="email" name="email" type="email">
-        <p class="popup-form__input-wrapper_invalid-message" id="email_error">This field must contain valid email</p>
-    </div>
-    <div class="popup-form__input-wrapper">
-        <label for="Textarea">Message</label><br>
-        <textarea id="message"></textarea>
-        <p class="popup-form__input-wrapper_invalid-message" id="textarea_error">This field can not be empty</p>
-    </div>
-    <div class="popup-form__btn-wrapper">
-        <button class="btn" id="form__submit">Contact Us</button>
-    </div>
-    <div class="success-message">
-        <div class="success-message__icon">
-            <i class="fa fa-check" aria-hidden="true"></i>
-        </div>
-        <span>Success!</span></div>
-</form>
-
         
     
     <script>
@@ -589,6 +588,8 @@ GitHub Actions now makes it easier to automate how you build, test, and deploy y
 <!-- Custom Scripts -->
 <script src="/blog/js/mail.js"></script>
 <script src="/blog/js/main.js"></script>
+<script src="/blog/js/contact-us.js"></script>
+<script src="/blog/libs/magnific-popup/jquery.magnific-popup.js"></script>
 
     </div>
 </body>
