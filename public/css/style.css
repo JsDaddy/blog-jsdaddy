@@ -173,7 +173,7 @@ header .nav-wrapper nav ul li a {
   font-style: inherit;
   font-size: 30px;
   text-align: center;
-  margin-left: 70px;
+  margin-left: 20px;
 }
 #header_container #header-wrap h1 a,
 #header #header-wrap h1 a {
@@ -1505,6 +1505,7 @@ i.icon:before {
   }
   .main-body-inner {
     padding: 0 !important;
+    background: none !important;
   }
 }
 @media only screen and (min-width: 900px) and (max-width: 1200px) {
@@ -1692,6 +1693,12 @@ i.icon:before {
   }
   #footer .credit {
     text-align: center;
+  }
+}
+@media only screen and (min-width: 1201px) {
+  .align-items-center {
+    margin-left: -45px !important;
+    margin-right: -45px !important;
   }
 }
 html,
