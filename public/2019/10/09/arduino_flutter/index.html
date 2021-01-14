@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta name="generator" content="Hexo 3.9.0">
-    <meta charset="utf-8">
+<head>
+    <meta charset="utf-8" />
 
     
 
@@ -10,139 +10,224 @@
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=6">
     
-    <meta name="keywords" content="Development,FLUTTER,Arduino">
+    <meta name="keywords" content="Development,FLUTTER,Arduino" />
     
     <meta name="Description" content="JSDaddy blog">
     <meta name="description" content="If you need to connect Arduino with your Android phone by USB, you need an OTG and usb_serial. Flutter SideInstall usb_serial package First you need variable ports to keep connection  1UsbPort _port;">
-<meta name="keywords" content="Development,FLUTTER,Arduino">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Arduino with Flutter">
 <meta property="og:url" content="http://yoursite.com/2019/10/09/arduino_flutter/index.html">
 <meta property="og:site_name" content="JSDaddy blog - we share our knowledge">
 <meta property="og:description" content="If you need to connect Arduino with your Android phone by USB, you need an OTG and usb_serial. Flutter SideInstall usb_serial package First you need variable ports to keep connection  1UsbPort _port;">
-<meta property="og:locale" content="default">
+<meta property="og:locale">
 <meta property="og:image" content="http://yoursite.com/blog/css/images/arduino_logo.png">
-<meta property="og:updated_time" content="2019-10-11T08:58:27.663Z">
+<meta property="article:published_time" content="2019-10-09T14:00:00.000Z">
+<meta property="article:modified_time" content="2021-01-14T12:22:15.743Z">
+<meta property="article:author" content="JSDaddy">
+<meta property="article:tag" content="Development">
+<meta property="article:tag" content="FLUTTER">
+<meta property="article:tag" content="Arduino">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Arduino with Flutter">
-<meta name="twitter:description" content="If you need to connect Arduino with your Android phone by USB, you need an OTG and usb_serial. Flutter SideInstall usb_serial package First you need variable ports to keep connection  1UsbPort _port;">
 <meta name="twitter:image" content="http://yoursite.com/blog/css/images/arduino_logo.png">
     
     <base href="/">
     
-        <link rel="alternate" href="/" title="JSDaddy blog - we share our knowledge" type="application/atom+xml">
+        <link rel="alternate" href="/" title="JSDaddy blog - we share our knowledge" type="application/atom+xml" />
     
 
     
-        <link rel="icon" href="/blog/css/images/favicon.ico">
+        <link rel="icon" href="/blog/css/images/favicon.ico" />
     
 
-    <link rel="stylesheet" href="/blog/libs/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/blog/libs/titillium-web/styles.css">
-    <link rel="stylesheet" href="/blog/libs/source-code-pro/styles.css">
+    
+<link rel="stylesheet" href="/blog/libs/font-awesome/css/font-awesome.min.css">
 
-    <link rel="stylesheet" href="/blog/css/style.css">
-    <link rel="stylesheet" href="/blog/css/main.min.css">
+    
+<link rel="stylesheet" href="/blog/libs/titillium-web/styles.css">
 
-    <script src="/blog/libs/jquery/3.4.1/jquery.min.js"></script>
     
-    
-        <link rel="stylesheet" href="/blog/libs/lightgallery/css/lightgallery.min.css">
-    
-    
-        <link rel="stylesheet" href="/blog/libs/justified-gallery/justifiedGallery.min.css">
-    
-    
-    
+<link rel="stylesheet" href="/blog/libs/source-code-pro/styles.css">
 
 
+    
+<link rel="stylesheet" href="/blog/css/style.css">
 
-</head>
-</html>
+    
+<link rel="stylesheet" href="/blog/css/main.min.css">
+
+
+    
+<script src="/blog/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    
+    
+        
+<link rel="stylesheet" href="/blog/libs/lightgallery/css/lightgallery.min.css">
+
+    
+    
+        
+<link rel="stylesheet" href="/blog/libs/justified-gallery/justifiedGallery.min.css">
+
+    
+    
+    
+
+
+
+<meta name="generator" content="Hexo 5.2.0"></head>
+
 <body>
     <div id="wrap">
         <header>
-    <div class="default" id="header">
-        <div class="container" id="header_container">
-            <div class="row align-items-center justify-content-between" id="header-wrap">
-                <div class="col-2 logo">
-                    <a href="/">
-                        <img src="/blog/css/images/logo.png" alt="JsDaddy">
-                    </a>
-                </div>
-                <div class="nav-wrapper col-lg-10 justify-content-center" id="list-wrap">
-                    <nav>
-                        <ul id="menu-wrap">
-                            <li>
-                                <a href="http://jsdaddy.io/#services" class="link-nav">Services</a>
-                            </li>
-                            <li>
-                                <a href="http://jsdaddy.io/#dev-process" class="link-nav">Development Process</a>
-                            </li>
-                            <li>
-                                <a href="http://jsdaddy.io/#technologies" class="link-nav">Technologies</a>
-                            </li>
-                            <li>
-                                <a href="http://jsdaddy.io/#testimonials" class="link-nav">Testimonials</a>
-                            </li>
-                            <li>
-                                <a href="http://jsdaddy.io/#about_us" class="link-nav">About us</a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <div class="btn-wrap">
-                        <a class="btn contact_us_btn" href="#popup-form">Contact Us</a>
-                    </div>
-                    <h1>Visit our
-                        <a href="https://github.com/JsDaddy" target="_blank" aria-label="github" rel="noopener">
-                            <i class="fa fa-github"></i>
-                        </a>
-                    </h1>
-                </div>
-                <div class="nav-burger">
-                    <div class="line"></div>
-                    <div class="line-middle"></div>
-
-                    <div class="line"></div>
-                </div>
-            </div>
+  <div class="default" id="header">
+    <div class="container" id="header_container">
+      <div
+        class="row align-items-center justify-content-between"
+        id="header-wrap"
+      >
+        <div class="col-2 logo">
+          <a href="/">
+            <img src="/blog/css/images/logo.png" alt="JsDaddy" />
+          </a>
         </div>
+        <div
+          class="nav-wrapper col-lg-10 justify-content-center"
+          id="list-wrap"
+        >
+          <nav>
+            <ul id="menu-wrap">
+              <li>
+                <!-- <a
+                    href="https://jsdaddy.io/#services"
+                    class="link-nav"
+                    target="_self"
+                    >Services</a
+                    > -->
+
+                <div class="dropdown">
+                  <a style="cursor: pointer;" class="link-nav">Our Services</a>
+                  <div class="dropdown-content">
+                    <a
+                      href="https://jsdaddy.io/services/web-development"
+                      target="_self"
+                      class="link-nav"
+                      >Full stack web solutions</a
+                    >
+                  </br>
+                    <a
+                      href="https://jsdaddy.io/services/cpm-solutions"
+                      target="_self"
+                      class="link-nav"
+                      >Cross-platform mobile solutions</a
+                    >
+                </br>
+                    <a
+                      href="https://jsdaddy.io/services/consulting"
+                      target="_self"
+                      class="link-nav"
+                      >Consulting</a
+                    >
+                </br>
+                <a
+                      href="https://jsdaddy.io/services/crm-solutions"
+                      target="_self"
+                      class="link-nav"
+                      >CRM solutions</a
+                    >
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a
+                  href="https://jsdaddy.io/about"
+                  target="_self"
+                  class="link-nav"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://jsdaddy.io/blog"
+                  target="_self"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://jsdaddy.io/contacts"
+                  target="_self"
+                  class="link-nav"
+                  style="font-family: Montserrat;"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <h1 style="position: absolute; right: 0; ">
+            <a
+              href="https://github.com/JsDaddy"
+              target="_blank"
+              aria-label="github"
+              rel="noopener"
+              
+            >
+              <i class="fa fa-github"></i>
+            </a>
+          </h1>
+        </div>
+        <div class="nav-burger">
+          <div class="line"></div>
+          <div class="line-middle"></div>
+
+          <div class="line"></div>
+        </div>
+      </div>
     </div>
+  </div>
 </header>
 <section class="blog-banner">
-    <div class="container">
-        <div class="row">
-            <h1>We share our knowledge</h1>
-        </div>
+  <div class="container">
+    <div class="row">
+      <h1>We share our knowledge</h1>
     </div>
+  </div>
 </section>
 
 <form id="popup-form" class="popup-form mfp-hide white-popup-block">
-    <h3>Contact Us</h3>
-    <div class="popup-form__input-wrapper">
-        <label for="name">Name</label><br>
-        <input id="name" name="name" type="text">
-        <p class="popup-form__input-wrapper_invalid-message" id="name_error">This field can not be empty</p>
+  <h3>Contact Us</h3>
+  <div class="popup-form__input-wrapper">
+    <label for="name">Name</label><br />
+    <input id="name" name="name" type="text" />
+    <p class="popup-form__input-wrapper_invalid-message" id="name_error">
+      This field can not be empty
+    </p>
+  </div>
+  <div class="popup-form__input-wrapper">
+    <label for="email">Email</label><br />
+    <input id="email" name="email" type="email" />
+    <p class="popup-form__input-wrapper_invalid-message" id="email_error">
+      This field must contain valid email
+    </p>
+  </div>
+  <div class="popup-form__input-wrapper">
+    <label for="Textarea">Message</label><br />
+    <textarea id="message"></textarea>
+    <p class="popup-form__input-wrapper_invalid-message" id="textarea_error">
+      This field can not be empty
+    </p>
+  </div>
+  <div class="popup-form__btn-wrapper">
+    <button class="btn" id="form__submit">Contact Us</button>
+  </div>
+  <div class="success-message">
+    <div class="success-message__icon">
+      <i class="fa fa-check" aria-hidden="true"></i>
     </div>
-    <div class="popup-form__input-wrapper">
-        <label for="email">Email</label><br>
-        <input id="email" name="email" type="email">
-        <p class="popup-form__input-wrapper_invalid-message" id="email_error">This field must contain valid email</p>
-    </div>
-    <div class="popup-form__input-wrapper">
-        <label for="Textarea">Message</label><br>
-        <textarea id="message"></textarea>
-        <p class="popup-form__input-wrapper_invalid-message" id="textarea_error">This field can not be empty</p>
-    </div>
-    <div class="popup-form__btn-wrapper">
-        <button class="btn" id="form__submit">Contact Us</button>
-    </div>
-    <div class="success-message">
-        <div class="success-message__icon">
-            <i class="fa fa-check" aria-hidden="true"></i>
-        </div>
-        <span>Success!</span></div>
+    <span>Success!</span>
+  </div>
 </form>
+
         <div class="container">
             <div class="main-body container-inner">
                 <div class="main-body-inner">
@@ -177,7 +262,7 @@
                 
     <div class="article-tag">
         <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/blog/tags/Arduino/">Arduino</a>, <a class="tag-link" href="/blog/tags/Development/">Development</a>, <a class="tag-link" href="/blog/tags/FLUTTER/">FLUTTER</a>
+        <a class="tag-link-link" href="/blog/tags/Arduino/" rel="tag">Arduino</a>, <a class="tag-link-link" href="/blog/tags/Development/" rel="tag">Development</a>, <a class="tag-link-link" href="/blog/tags/FLUTTER/" rel="tag">FLUTTER</a>
     </div>
 
             </div>
@@ -185,27 +270,24 @@
         
 
         <div class="article-entry" itemprop="articleBody">
-            <p><img src="/blog/css/images/arduino_logo.png" alt></p>
-<p>If you need to connect Arduino with your Android phone by USB, you need an OTG and <a href="https://pub.dev/packages/usb_serial" target="_blank" rel="noopener">usb_serial</a>.</p>
-<h2 id="Flutter-Side"><a href="#Flutter-Side" class="headerlink" title="Flutter Side"></a>Flutter Side</h2><p>Install <a href="https://pub.dev/packages/usb_serial" target="_blank" rel="noopener">usb_serial</a> package</p>
+            <p><img src="/blog/css/images/arduino_logo.png"></p>
+<p>If you need to connect Arduino with your Android phone by USB, you need an OTG and <a target="_blank" rel="noopener" href="https://pub.dev/packages/usb_serial">usb_serial</a>.</p>
+<h2 id="Flutter-Side"><a href="#Flutter-Side" class="headerlink" title="Flutter Side"></a>Flutter Side</h2><p>Install <a target="_blank" rel="noopener" href="https://pub.dev/packages/usb_serial">usb_serial</a> package</p>
 <p>First you need variable ports to keep connection </p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">UsbPort _port;</span><br></pre></td></tr></table></figure>
 
 <p>Here we connect to the specific device</p>
 <figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">Future&lt;<span class="built_in">bool</span>&gt; _connectTo(device) <span class="keyword">async</span> &#123;</span><br><span class="line">  <span class="keyword">if</span> (_port != <span class="keyword">null</span>) &#123;</span><br><span class="line">    _port.close();</span><br><span class="line">    _port = <span class="keyword">null</span>;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  _port = <span class="keyword">await</span> device.create();</span><br><span class="line">  <span class="keyword">if</span> (!<span class="keyword">await</span> _port.open()) &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">await</span> _port.setDTR(<span class="keyword">true</span>);</span><br><span class="line">  <span class="keyword">await</span> _port.setRTS(<span class="keyword">true</span>);</span><br><span class="line">  <span class="keyword">await</span> _port.setPortParameters(</span><br><span class="line">      <span class="number">9600</span>, UsbPort.DATABITS_8,</span><br><span class="line">      UsbPort.STOPBITS_1, </span><br><span class="line">      UsbPort.PARITY_NONE);</span><br><span class="line">  <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
 <p><strong>Important first argument of <code>setPortParameters</code> must be the same on Flutter Side and Arduino Side</strong></p>
 <p>Here we are getting list of devices and connecting only first device </p>
 <figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">void</span> _getPorts() <span class="keyword">async</span> &#123;</span><br><span class="line">   _ports = [];</span><br><span class="line">   <span class="built_in">List</span>&lt;UsbDevice&gt; devices = <span class="keyword">await</span> UsbSerial.listDevices();</span><br><span class="line">   <span class="keyword">await</span> _connectTo(devices.isEmpty ? <span class="keyword">null</span> : devices[<span class="number">0</span>]);</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
-
 <p>On init state initialize listener for incoming events and fire <code>_getPorts</code> function</p>
 <figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@override</span></span><br><span class="line">    <span class="keyword">void</span> initState() &#123;</span><br><span class="line">      UsbSerial.usbEventStream.listen((UsbEvent event) &#123;</span><br><span class="line">        _getPorts();</span><br><span class="line">      &#125;);</span><br><span class="line">      _getPorts();</span><br><span class="line">      <span class="keyword">super</span>.initState();</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-
 <p>And last we need function that will send message to Arduino</p>
 <figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">void</span> sendMsg(<span class="built_in">String</span> message) <span class="keyword">async</span> &#123;</span><br><span class="line">  <span class="keyword">await</span> _port.write(Uint8List.fromList(msg.codeUnits));</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
 
-<h2 id="Arduino-Side"><a href="#Arduino-Side" class="headerlink" title="Arduino Side"></a>Arduino Side</h2><p>All you need here it is <a href="https://www.arduino.cc/en/Main/software" target="_blank" rel="noopener">arduino web IDE</a></p>
-<p><img src="/blog/css/images/arduino-side.png" alt></p>
+<h2 id="Arduino-Side"><a href="#Arduino-Side" class="headerlink" title="Arduino Side"></a>Arduino Side</h2><p>All you need here it is <a target="_blank" rel="noopener" href="https://www.arduino.cc/en/Main/software">arduino web IDE</a></p>
+<p><img src="/blog/css/images/arduino-side.png"></p>
 
         </div>
     </div>
@@ -215,7 +297,7 @@
     
         
     <div id="disqus_thread">
-        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     </div>
 
     
@@ -410,7 +492,7 @@
     <div class="widget-wrap widget-list">
         <h3 class="widget-title">tags</h3>
         <div class="widget">
-            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/Arduino/">Arduino</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/CI-CD/">CI/CD</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/CSS/">CSS</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/Development/">Development</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/FLUTTER/">FLUTTER</a><span class="tag-list-count">2</span></li></ul>
+            <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/Arduino/" rel="tag">Arduino</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/CI-CD/" rel="tag">CI/CD</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/CSS/" rel="tag">CSS</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/Development/" rel="tag">Development</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/FLUTTER/" rel="tag">FLUTTER</a><span class="tag-list-count">2</span></li></ul>
         </div>
     </div>
 
@@ -433,7 +515,7 @@
 <!--            <ul>-->
 <!--                -->
 <!--                    <li>-->
-<!--                        <a href="http://hexo.io">Hexo</a>-->
+<!--                        <a target="_blank" rel="noopener" href="http://hexo.io">Hexo</a>-->
 <!--                    </li>-->
 <!--                -->
 <!--            </ul>-->
@@ -489,26 +571,26 @@
                         <li>
                             <a href="#testimonials">Testimonials</a>
                         </li>
-                        <li>
+                        <!-- <li>
                             <a href="#footer">About Us</a>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
                 <div class="social">
                     <div>Social</div>
                     <ul>
 <!--                        <li>-->
-<!--                            <a class="facebook" href="https://www.facebook.com/JSDaddyUkraine/">-->
+<!--                            <a class="facebook" target="_blank" rel="noopener" href="https://www.facebook.com/JSDaddyUkraine/">-->
 <!--                                <i class="fa fa-facebook"></i>-->
 <!--                            </a>-->
 <!--                        </li>-->
                         <li>
-                            <a class="linkedin" aria-label="linkedin" href="https://www.linkedin.com/company/jsdaddy/">
+                            <a class="linkedin" aria-label="linkedin" target="_blank" rel="noopener" href="https://www.linkedin.com/company/jsdaddy/">
                                 <i class="fa fa-linkedin"></i>
                             </a>
                         </li>
                         <li>
-                            <a class="github" aria-label="github" href="https://github.com/JsDaddy">
+                            <a class="github" aria-label="github" target="_blank" rel="noopener" href="https://github.com/JsDaddy">
                                 <i class="fa fa-github"></i>
                             </a>
                         </li>
@@ -549,28 +631,56 @@
 
 
     
-        <script src="/blog/libs/lightgallery/js/lightgallery.min.js"></script>
-        <script src="/blog/libs/lightgallery/js/lg-thumbnail.min.js"></script>
-        <script src="/blog/libs/lightgallery/js/lg-pager.min.js"></script>
-        <script src="/blog/libs/lightgallery/js/lg-autoplay.min.js"></script>
-        <script src="/blog/libs/lightgallery/js/lg-fullscreen.min.js"></script>
-        <script src="/blog/libs/lightgallery/js/lg-zoom.min.js"></script>
-        <script src="/blog/libs/lightgallery/js/lg-hash.min.js"></script>
-        <script src="/blog/libs/lightgallery/js/lg-share.min.js"></script>
-        <script src="/blog/libs/lightgallery/js/lg-video.min.js"></script>
+        
+<script src="/blog/libs/lightgallery/js/lightgallery.min.js"></script>
+
+        
+<script src="/blog/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+
+        
+<script src="/blog/libs/lightgallery/js/lg-pager.min.js"></script>
+
+        
+<script src="/blog/libs/lightgallery/js/lg-autoplay.min.js"></script>
+
+        
+<script src="/blog/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+
+        
+<script src="/blog/libs/lightgallery/js/lg-zoom.min.js"></script>
+
+        
+<script src="/blog/libs/lightgallery/js/lg-hash.min.js"></script>
+
+        
+<script src="/blog/libs/lightgallery/js/lg-share.min.js"></script>
+
+        
+<script src="/blog/libs/lightgallery/js/lg-video.min.js"></script>
+
     
     
-        <script src="/blog/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+        
+<script src="/blog/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+
     
     
 
 
 
 <!-- Custom Scripts -->
+
 <script src="/blog/js/mail.js"></script>
+
+
 <script src="/blog/js/main.js"></script>
+
+
 <script src="/blog/js/contact-us.js"></script>
+
+
 <script src="/blog/libs/magnific-popup/jquery.magnific-popup.js"></script>
+
 
     </div>
 </body>

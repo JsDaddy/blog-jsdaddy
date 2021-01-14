@@ -1,82 +1,148 @@
 <header>
-    <div class="default" id="header">
-        <div class="container" id="header_container">
-            <div class="row align-items-center justify-content-between" id="header-wrap">
-                <div class="col-2 logo">
-                    <a href="/">
-                        <img src="<%- config.root %>css/images/logo.png" alt="JsDaddy">
-                    </a>
-                </div>
-                <div class="nav-wrapper col-lg-10 justify-content-center" id="list-wrap">
-                    <nav>
-                        <ul id="menu-wrap">
-                            <li>
-                                <a href="http://jsdaddy.io/#services" class="link-nav">Services</a>
-                            </li>
-                            <li>
-                                <a href="http://jsdaddy.io/#dev-process" class="link-nav">Development Process</a>
-                            </li>
-                            <li>
-                                <a href="http://jsdaddy.io/#technologies" class="link-nav">Technologies</a>
-                            </li>
-                            <li>
-                                <a href="http://jsdaddy.io/#testimonials" class="link-nav">Testimonials</a>
-                            </li>
-                            <!-- <li>
-                                <a href="http://jsdaddy.io/#about_us" class="link-nav">About us</a>
-                            </li> -->
-                        </ul>
-                    </nav>
-                    <div class="btn-wrap">
-                        <a class="btn contact_us_btn" href="#popup-form">Contact Us</a>
-                    </div>
-                    <h1>Visit our
-                        <a href="https://github.com/JsDaddy" target="_blank" aria-label="github" rel="noopener">
-                            <i class="fa fa-github"></i>
-                        </a>
-                    </h1>
-                </div>
-                <div class="nav-burger">
-                    <div class="line"></div>
-                    <div class="line-middle"></div>
-
-                    <div class="line"></div>
-                </div>
-            </div>
+  <div class="default" id="header">
+    <div class="container" id="header_container">
+      <div
+        class="row align-items-center justify-content-between"
+        id="header-wrap"
+      >
+        <div class="col-2 logo">
+          <a href="/">
+            <img src="<%- config.root %>css/images/logo.png" alt="JsDaddy" />
+          </a>
         </div>
+        <div
+          class="nav-wrapper col-lg-10 justify-content-center"
+          id="list-wrap"
+        >
+          <nav>
+            <ul id="menu-wrap">
+              <li>
+                <!-- <a
+                    href="https://jsdaddy.io/#services"
+                    class="link-nav"
+                    target="_self"
+                    >Services</a
+                    > -->
+
+                <div class="dropdown">
+                  <a style="cursor: pointer;" class="link-nav">Our Services</a>
+                  <div class="dropdown-content">
+                    <a
+                      href="https://jsdaddy.io/services/web-development"
+                      target="_self"
+                      class="link-nav"
+                      >Full stack web solutions</a
+                    >
+                  </br>
+                    <a
+                      href="https://jsdaddy.io/services/cpm-solutions"
+                      target="_self"
+                      class="link-nav"
+                      >Cross-platform mobile solutions</a
+                    >
+                </br>
+                    <a
+                      href="https://jsdaddy.io/services/consulting"
+                      target="_self"
+                      class="link-nav"
+                      >Consulting</a
+                    >
+                </br>
+                <a
+                      href="https://jsdaddy.io/services/crm-solutions"
+                      target="_self"
+                      class="link-nav"
+                      >CRM solutions</a
+                    >
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a
+                  href="https://jsdaddy.io/about"
+                  target="_self"
+                  class="link-nav"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://jsdaddy.io/blog"
+                  target="_self"
+                  class="link-nav"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://jsdaddy.io/contacts"
+                  target="_self"
+                  class="link-nav"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <h1 style="position: absolute; right: 0; ">
+            <a
+              href="https://github.com/JsDaddy"
+              target="_blank"
+              aria-label="github"
+              rel="noopener"
+              
+            >
+              <i class="fa fa-github"></i>
+            </a>
+          </h1>
+        </div>
+        <div class="nav-burger">
+          <div class="line"></div>
+          <div class="line-middle"></div>
+
+          <div class="line"></div>
+        </div>
+      </div>
     </div>
+  </div>
 </header>
 <section class="blog-banner">
-    <div class="container">
-        <div class="row">
-            <h1>We share our knowledge</h1>
-        </div>
+  <div class="container">
+    <div class="row">
+      <h1>We share our knowledge</h1>
     </div>
+  </div>
 </section>
 
 <form id="popup-form" class="popup-form mfp-hide white-popup-block">
-    <h3>Contact Us</h3>
-    <div class="popup-form__input-wrapper">
-        <label for="name">Name</label><br>
-        <input id="name" name="name" type="text">
-        <p class="popup-form__input-wrapper_invalid-message" id="name_error">This field can not be empty</p>
+  <h3>Contact Us</h3>
+  <div class="popup-form__input-wrapper">
+    <label for="name">Name</label><br />
+    <input id="name" name="name" type="text" />
+    <p class="popup-form__input-wrapper_invalid-message" id="name_error">
+      This field can not be empty
+    </p>
+  </div>
+  <div class="popup-form__input-wrapper">
+    <label for="email">Email</label><br />
+    <input id="email" name="email" type="email" />
+    <p class="popup-form__input-wrapper_invalid-message" id="email_error">
+      This field must contain valid email
+    </p>
+  </div>
+  <div class="popup-form__input-wrapper">
+    <label for="Textarea">Message</label><br />
+    <textarea id="message"></textarea>
+    <p class="popup-form__input-wrapper_invalid-message" id="textarea_error">
+      This field can not be empty
+    </p>
+  </div>
+  <div class="popup-form__btn-wrapper">
+    <button class="btn" id="form__submit">Contact Us</button>
+  </div>
+  <div class="success-message">
+    <div class="success-message__icon">
+      <i class="fa fa-check" aria-hidden="true"></i>
     </div>
-    <div class="popup-form__input-wrapper">
-        <label for="email">Email</label><br>
-        <input id="email" name="email" type="email">
-        <p class="popup-form__input-wrapper_invalid-message" id="email_error">This field must contain valid email</p>
-    </div>
-    <div class="popup-form__input-wrapper">
-        <label for="Textarea">Message</label><br>
-        <textarea id="message"></textarea>
-        <p class="popup-form__input-wrapper_invalid-message" id="textarea_error">This field can not be empty</p>
-    </div>
-    <div class="popup-form__btn-wrapper">
-        <button class="btn" id="form__submit">Contact Us</button>
-    </div>
-    <div class="success-message">
-        <div class="success-message__icon">
-            <i class="fa fa-check" aria-hidden="true"></i>
-        </div>
-        <span>Success!</span></div>
+    <span>Success!</span>
+  </div>
 </form>
